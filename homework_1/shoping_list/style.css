@@ -1,0 +1,26 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background:url(img/dynamic.png);
+	font-size: 100%;
+}
+
+main{
+	border: 1px solid #525252;
+    margin:11% 25%;
+    box-shadow: 0 3px 20px #525252;
+   
+
+}
+h1{
+	text-align: center;
+	padding-bottom: 20px;
+}
+li{ font-size: 20px;
+	list-style: none;
+	text-align: center;
+	padding: 10px;
+}
