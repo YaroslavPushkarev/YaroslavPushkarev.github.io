@@ -1,0 +1,59 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-size: 100%;
+}
+header{
+	background:rgb(165,42,42);
+	width: 50%;
+	margin: 5% 25%;
+}
+.photo{
+	margin: -4% 25%;
+ }
+
+h1{
+	color: white;
+	text-align: center;
+}
+h2{
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	font-weight: normal;
+}
+ .text1 {
+ 	margin: 4% 25%;
+ 	font-size:18px;
+ }
+
+ .text2{
+ 	margin: 4% 25%;
+ 	font-size: 18px;
+ }
+ footer{
+ 	background: black;
+ 	width: 50%;
+ 	margin: -2% 25%;
+ }
+
+
+ .cars{
+ 	margin: -3% 25%;
+ 	text-align: center;
+
+} 
+
+#car01,#car02,#car03,#car04,#car05{
+	border: dashed;
+ 
+}
+i{
+	color:blue; 
+}
+span{
+	color: blue;
+}
