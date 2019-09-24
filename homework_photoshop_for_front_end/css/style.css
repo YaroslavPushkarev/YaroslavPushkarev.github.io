@@ -4,7 +4,7 @@
 	box-sizing:border-box;
 }
 body{
-	font-size: 15px;
+	font-size: 14px;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -44,7 +44,7 @@ footer{
 	width: 230px;
 	border-top: 1px solid #bdbdbd;
 	position: absolute;
-	top: 60px;
+	top: 40px;
 	left: 50%;
 	transform: translate(-50%);
 
@@ -71,10 +71,10 @@ p{
 
 }
 .social_link{
-	padding: 40px 20px 85px 10px;
+	margin-right: 20px;
 	text-decoration: none;
 }
 .social_link:last-child{
-	margin: 0;
+	margin-right: 0;
 }
 
