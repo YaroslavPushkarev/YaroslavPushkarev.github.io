@@ -4,8 +4,9 @@
 	box-sizing:border-box;
 }
 body{
-	font-size: 16px;
+	font-size: 15px;
 	font-family: 'Open Sans', sans-serif;
+	font-stretch: condensed;
 }
 
 footer{
@@ -19,6 +20,7 @@ footer{
 }
 
 .text{
+
    	color: white;
    	text-transform: uppercase;
    	text-align: center;
