@@ -6,30 +6,32 @@
 body{
 	font-size: 15px;
 	font-family: 'Open Sans', sans-serif;
-	font-stretch: condensed;
 }
 
 footer{
 	background: #121116;
-	height: 420px;
+
+}
+.container{
+	padding: 35px;
+	padding-top: 120px;
+
 }
 .kasper{
-	padding: 120px 0 5px;
 	text-align: center;
-    padding-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 .text{
-
    	color: white;
    	text-transform: uppercase;
    	text-align: center;
-   	padding-bottom: 20px;
+   	margin-bottom: 20px;
 }
 
 .line {
 	position: relative;
-	padding-bottom: 20px;
+	margin-bottom: 40px;
 }
  .line::before {
 	content: "";
@@ -44,17 +46,16 @@ footer{
 }
 .social{
 	text-align: center;
-	padding-left: 25px;
 	margin-bottom: 70px; 
 
 }
 
 li{
-	display: inline-block;
+	display:inline-block;
 	margin-right: 30px;
 }
-a{
-	display: inline-block;
+a{  
+	display:inline-block;
 	text-decoration: none;
 }
 .copyright{
@@ -63,4 +64,12 @@ a{
 }
 .link_kasper{
 	color:#049bc4;
+
+}
+.social_link{
+	padding-right: 10px;
+	font-size: 0;
+}
+.social_link:last-child{
+	margin: 0;
 }
