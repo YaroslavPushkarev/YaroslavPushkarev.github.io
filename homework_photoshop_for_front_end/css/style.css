@@ -13,15 +13,20 @@ footer{
 
 }
 .container{
-	padding: 35px;
-	padding-top: 121px;
-
+	width: 100%;
+	max-width: 1200px;
+	margin:0 auto;
 }
 .kasper{
+	padding: 120px 0 40px;
+}
+.kasper_logo{
 	text-align: center;
 	margin-bottom: 50px;
 }
-
+.kasper_link{
+    font-size: 0;
+}
 .text{
    	color: white;
    	text-transform: uppercase;
@@ -29,17 +34,17 @@ footer{
    	margin-bottom: 20px;
 }
 
-.line {
+.text {
 	position: relative;
 	margin-bottom: 40px;
 }
- .line::before {
+ .text::before {
 	content: "";
 	display: block;
 	width: 230px;
 	border-top: 1px solid #bdbdbd;
 	position: absolute;
-	top: 0;
+	top: 60px;
 	left: 50%;
 	transform: translate(-50%);
 
@@ -52,24 +57,24 @@ footer{
 
 li{
 	display:inline-block;
-	margin-right: 30px;
 }
 a{
 	display:inline-block;
-	text-decoration: none;
 }
-.copyright{
+p{
 	color:white;
 	text-align: center;
 }
 .link_kasper{
 	color:#049bc4;
+	text-decoration: none;
 
 }
 .social_link{
-	padding-right: 10px;
-	font-size: 0;
+	padding: 40px 20px 85px 10px;
+	text-decoration: none;
 }
 .social_link:last-child{
 	margin: 0;
 }
+
