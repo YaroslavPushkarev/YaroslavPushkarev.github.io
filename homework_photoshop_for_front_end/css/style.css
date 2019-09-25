@@ -12,11 +12,6 @@ footer{
 	background: #121116;
 
 }
-.container{
-	width: 100%;
-	max-width: 1200px;
-	margin:0 auto;
-}
 .kasper{
 	padding: 120px 0 40px;
 }
@@ -76,5 +71,9 @@ p{
 }
 .social_link:last-child{
 	margin-right: 0;
+}
+.social_link1:hover{
+	border: 1px solid #049bc4;
+	border-radius: 50%;
 }
 
