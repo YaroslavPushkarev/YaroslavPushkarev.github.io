@@ -1,0 +1,89 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: all .1s ease-in;
+}
+body{
+	display: block;
+	font-family: \'Trebuchet MS\', Trebuchet, Arial, sans-serif ;
+}
+
+.header{
+	background-color: #464F50;
+	text-align: center;
+	color:#EC8882;
+	padding: 20px;
+	margin-bottom: 40px;
+}
+.title{
+	margin-bottom: 10px;
+}
+.main{
+	background:rgba(49,49,49,1);
+	padding-bottom:300px;
+}
+.form{
+	margin: 0 auto;
+	min-width: 320px;
+	max-width: 400px;
+	color:white;
+
+}
+.form_list{
+	list-style: none;
+	margin-bottom: 20px;
+}
+.form_label{
+	display: block;
+	width: 100%;
+	padding: 10px;
+}
+.form_li:nth-child(2n){
+	background-color: #85849A;
+}
+.form_li:nth-child(2n+1){
+	background-color: #78778F;
+}
+
+.form_li:hover{
+	background-color: #525252;
+	border-top:1px solid white;
+	border-bottom: 1px solid white;
+}
+.form_li:active{
+	background-color: rgba(254,95,85,1);
+}
+
+
+[type="checkbox"]{
+	margin-right: 10px;
+}
+.form_label:active{
+   text-decoration: line-through;
+}
+.list_food{
+	margin-right: 10px;
+}
+.label_comment{
+	font-size: 10px;
+}
+.label_comment:before{
+	content: "{"
+}
+.label_comment:after{
+	content: "}";
+
+}
+.button{
+	display: block;
+	width: 100%;
+	padding: 20px;
+	background-color: #464F50;
+	border: none;
+	color:#EC8882;
+	font-size: 18px;
+}
+.button:hover{
+    background-color: rgba(242,244,246,1);
+}
