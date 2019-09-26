@@ -5,7 +5,7 @@
 	transition: all .1s ease-in;
 }
 body{
-	display: block;
+	background-color:rgba(49,49,49,1);
 	font-family: \'Trebuchet MS\', Trebuchet, Arial, sans-serif ;
 }
 
@@ -20,8 +20,7 @@ body{
 	margin-bottom: 10px;
 }
 .main{
-	background:rgba(49,49,49,1);
-	padding-bottom:300px;
+	background-color:rgba(49,49,49,1);
 }
 .form{
 	margin: 0 auto;
@@ -35,33 +34,33 @@ body{
 	margin-bottom: 20px;
 }
 .form_label{
-	display: block;
-	width: 100%;
-	padding: 10px;
+	display:block;
+    padding: 10px;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
 }
-.form_li:nth-child(2n){
-	background-color: #85849A;
+.form_li:nth-child(2n+1) .form_label{
+	background-color: rgba(107,119,141,1);
 }
-.form_li:nth-child(2n+1){
-	background-color: #78778F;
+.form_li:nth-child(2n) .form_label{
+	background-color: rgba(163,158,158,1);
 }
+.form_label:hover{
+	background-color: rgba(49,49,49,1);
+	border-top: 2px solid white;
+	border-bottom: 2px solid white; 
+}
+.form_li .form_label:active{
+	background-color:rgba(234,112,112,1);
 
-.form_li:hover{
-	background-color: #525252;
-	border-top:1px solid white;
-	border-bottom: 1px solid white;
 }
-.form_li:active{
-	background-color: rgba(254,95,85,1);
+.form_li_input:checked ~ span{
+	text-decoration: line-through;
 }
-
-
 [type="checkbox"]{
 	margin-right: 10px;
 }
-.form_label:active{
-   text-decoration: line-through;
-}
+
 .list_food{
 	margin-right: 10px;
 }
