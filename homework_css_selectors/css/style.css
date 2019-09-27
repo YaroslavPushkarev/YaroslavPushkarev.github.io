@@ -5,10 +5,9 @@
 	transition: all .1s ease-in;
 }
 body{
-	background-color:rgba(49,49,49,1);
 	font-family: \'Trebuchet MS\', Trebuchet, Arial, sans-serif ;
+	background-color:rgba(49,49,49,1);
 }
-
 .header{
 	background-color: #464F50;
 	text-align: center;
@@ -18,9 +17,6 @@ body{
 }
 .title{
 	margin-bottom: 10px;
-}
-.main{
-	background-color:rgba(49,49,49,1);
 }
 .form{
 	margin: 0 auto;
