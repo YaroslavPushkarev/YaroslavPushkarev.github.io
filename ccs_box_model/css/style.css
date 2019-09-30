@@ -1,0 +1,122 @@
+*{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    color:white;
+    font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+	transition: all .1s ease-in;
+}
+body{
+	font-size:100%;
+	background-color:#2694ab;
+}
+
+.conteiner{
+	width: 100%;
+	max-width: 700px;
+	padding: 20px 0 20px;
+	margin: 0 auto;
+}
+.title{
+	margin-bottom: 25px;
+}
+.box_cities{
+	font-size: 0;
+	min-width: 290px;
+	border: 2px solid #fff;
+	margin-bottom: 20px;
+
+}
+.box_cities_li{
+    display: inline-block;
+	font-size: 18px;
+}
+.cities_link{
+	text-decoration: none;
+	display:block;
+    padding: 20px;
+    border: 1px solid #fff;
+    text-align: center;
+}
+.medium_size{
+	width: 50%;
+}
+.small_size{
+	width: 25%;
+}
+
+.beach__water{
+	background-color: #0095B6;
+}
+.big_size{
+	width: 100%;
+}
+.turquoise{
+	background-color: #30D5C8;
+}
+.purple{
+	background-color: rgba(169,76,175,1);
+}
+.black{
+	background-color: rgba(169,76,175,1);
+}
+
+.alizarin_red{
+	background-color: #E32636;
+}
+.orange{
+	background-color: #C34D0A;
+}
+
+.gamboge{
+	background-color: #E49B0F;
+}
+
+.mountain_meadow{
+	background-color:#30BA8F;
+}
+
+.dartmouth_green{
+	background-color: #00693E;
+}
+
+.strawberry_craiola{
+  background-color: #FF43A4;
+}
+.deep_green{
+	background-color: #004524;
+}
+.deep_purple{
+	background-color: #423189;
+}
+.box_cities:hover .box_cities_li:not(:hover){
+	opacity: .5;
+}
+.wi-horizon-alt:after{
+	content: '\f046';
+}
+.wi-day-sunny:after{
+	content: '\f00d';
+}
+
+.wi-day-cloudy:after{
+ content: '\f07d';
+}
+.wi-day-hail:after{
+	content: '\f004';
+}
+.wi-cloudy:after{
+	content: '\f013';
+}
+.wi-cloudy-gusts:after{
+	content: '\f011';
+}
+.wi-night-rain-mix:after{
+	content:'\f034';
+}
+.wi-night-alt-sprinkle:after{
+    content: '\f02b';
+}
+.wi-night-snow-thunderstorm:after{
+	content: '\f06c';
+}
