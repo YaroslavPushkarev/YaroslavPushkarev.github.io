@@ -10,14 +10,13 @@ html,body{
 body{
 	color:$dark;
 	background-color: $dark-blue;
-
-	display: flex;
+    display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .container{
 	width: 100%;
-	max-width: 800px;
+	max-width: 680px;
 	margin: auto;
 	padding: 0 15px;
 }
