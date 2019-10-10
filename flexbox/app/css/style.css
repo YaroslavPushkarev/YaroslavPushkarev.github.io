@@ -13,10 +13,6 @@ body {
 	background-color: #e2e7ec;
 }
 
-.design {
-	padding: 100px0 0 100px;
-}
-
 .container {
 	width: 100%;
 	max-width: 1120px;
@@ -41,6 +37,7 @@ body {
 	-webkit-align-content: space-between;
 	-ms-flex-line-pack: justify;
 	        align-content: space-between;
+
 	height: 1110px;
 	list-style: none;
 	margin-bottom: 150px;
@@ -49,11 +46,12 @@ body {
 .list__item {
 	width: 100%;
 	max-width: 360px;
-	min-width: 360px;
-	height: 540px;
 	background: #fff;
 }
-
+.list__first{
+	width: 100%;
+	max-width: 740px;
+}
 .link_list {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -67,6 +65,13 @@ body {
 	height: 540px;
 }
 
+.link-first{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+
+}
 .first__footer {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -83,7 +88,6 @@ body {
 	        justify-content: flex-end;
 	background-image: url(../img/car.png);
 	height: 540px;
-	min-width: 740px;
 	padding: 0 0 40px 40px;
 }
 

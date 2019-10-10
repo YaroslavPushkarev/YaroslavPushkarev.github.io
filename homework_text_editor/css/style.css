@@ -1,0 +1,112 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+body{
+	font-size: 100%;
+	background-color:#464f53;
+	padding-top: 150px;
+}	
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.editor{
+	width: 100%;
+	max-width: 1060px;
+	margin: 0 auto;
+}
+.contents:before{
+	content:"";
+    width: 2px;
+    background-color: #e8eced;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 120px;
+}
+.contents{
+	width: 100%;
+	max-width: 1200px;
+	padding:200px 130px 40px 130px;
+	background-color: white;
+}
+.contents__author{
+	font-size: 20px;
+	letter-spacing: 4px;
+	color: #b4b4b4;
+	font-family: "Proxima Nova";
+	text-transform: uppercase;
+	margin-bottom: 50px;
+}
+.contents__title{
+	font-size: 78px;
+	letter-spacing: 4px;
+	line-height: 74px;
+	color: #2a2a2a;
+	font-family: "Futura PT";
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.contents__subtitle{
+	font-size: 30px;
+	line-height: 62px;
+	color: #8f8f8f;
+	font-family: "Georgia";
+	font-style: italic;
+	text-align: left;
+	margin-bottom: 60px;
+}
+.contents__text{
+	font-size: 27px;
+	line-height: 40px;
+	color: #000000;
+	font-family: "Georgia";
+	text-align:left;
+}
+.first{
+	margin-bottom:40px;
+}
+.input{
+	width: 100%;
+	max-width: 880px;
+	background-color: #181818;
+	position: absolute;
+	right: 0px;
+	top:-100px;
+	padding: 50px 50px 50px;
+	font-size: 0;
+	z-index: 2;
+}
+.input__title{
+	font-size: 15px;
+	letter-spacing: 5px;
+	color: #767676;
+	font-family: "Proxima Nova";
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+.input__text{
+	max-width: 340px;
+	font-size: 48px;
+	color: #fefefe;
+	font-family: "Playfair Display";
+	font-weight: 400;
+	margin-bottom: 20px;
+	border-right: 1px solid  #fff;
+}
+
+.control{
+	width: 100%;
+	max-width: 815px;
+	background-color:#eeb62b;
+	position: absolute;
+	right: 0;
+	top: 150px;
+	z-index: 1;
+
+}
