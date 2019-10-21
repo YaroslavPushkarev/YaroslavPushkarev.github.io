@@ -1,0 +1,43 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+}
+html,body{
+	min-height: 100vh;
+}
+body{
+	font-family: 'Raleway', sans-serif;
+	color: #7e7e7e;
+	font-size: 100%;
+	background-color: #fff;
+
+}
+
+.container{
+	width: 100%;
+	max-width: 1140px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.highlither{
+   display: inline-block;
+   background-color: #b2f2ee;
+   background-color: rgba (#b2f2ee,.7);
+}
+
+.sh-title{
+   text-transform: uppercase;
+   text-shadow: 5px 5px 6px rgba(80, 80, 80, 0.5);
+   font-weight: 700;
+   font-family: 'Montserrat', sans-serif;
+   text-align: center;
+   color:  #505050;
+   font-size: px_to_rem(45px)
+}
+.sh-section-title{
+
+}
+.sh-section-subtitle{
+
+}

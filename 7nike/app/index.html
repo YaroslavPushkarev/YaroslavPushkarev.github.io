@@ -8,7 +8,10 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <section class="goods">
+
+    <section class="goods">
+       <div class="box">
+       </div>
         <div class="container">
             <div class="goods__card">
                 <header class="goods__card-header">
@@ -20,19 +23,46 @@
                     <div class="card__left">
                         <img class="card__img" src="img/dark.png" alt="nike-blue">
 
-                        <form id="goods-form" class="goods__form">
+                        <div id="goods__add- form" class="goods__form">
                             <input type="radio" name="color" id="1" checked>
-                            <label class="card__label" class="card__label" for="1"></label>
+                            <label class="card__label" class="card__label" for="1" data-color="dark"></label>
                             <input type="radio" name="color" id="2">
-                            <label class="card__label" for="2"></label>
+                            <label class="card__label" for="2" data-color="white"></label>
                             <input type="radio" name="color" id="3">
-                            <label class="card__label" for="3"></label>
+                            <label class="card__label" for="3" data-color="red"></label>
                             <input type="radio" name="color" id="4">
-                            <label class="card__label" for="4"></label>
-                        </form>
+                            <label class="card__label" for="4" data-color="blue"></label>
+                        </div>
                     </div>
                     <div class="card__right">
-                        
+                        <h4 class="card__title">nike<span class="t-upper">
+                                sb
+                            </span>
+                            stefan janoski maxc
+                        </h4>
+                        <p class="card__subtitle">
+                            unisex skateboarding shoe(men's sizing)
+                        </p>
+                      <!--   <ul class="rating">
+                            <li class="rating__item">
+                                
+                            </li>
+                            <li class="rating__item">
+                                
+                            </li>
+                            <li class="rating__item">
+                                
+                            </li>
+                            <li class="rating__item">
+                                
+                            </li>
+                            <li class="rating__item">
+                                
+                            </li>
+                        </ul> -->
+                       <form id="goods-form" class="goods__form">
+                            <input type="hidden" value="001-001">
+                        </form>
                     </div>
                 </div>
             </div>

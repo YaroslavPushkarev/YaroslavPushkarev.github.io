@@ -3,50 +3,100 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+html,body{
+	min-height: 100vh;
+
+}
 body{
-	background-color: f6f6f6;
+	font-size: 100%;
+	background-color: #f6f6f6;
+	font-family: "Lato";
+}
+.container{
+	width: 100%;
+	max-width: 1170px;
+	margin:0 auto;
 	padding: 110px 0;
-}
 
-img:hover{
-	background-color: blue;
 }
-.title{
-	font-size: 34px;
-	letter-spacing: 5px;
-	color: #3c3c3c;
-	font-family: "Lato" sans-serif;
-	font-weight: 700;
+.header{
 	text-align: center;
-	text-transform: uppercase;
-	position:relative;
-}
+	margin-bottom: 60px;
 
-.title:after{
+
+	&__title{
+	font-size: 34px;
+	color: #3c3c3c;
+	font-weight: 700;
+	text-transform: uppercase;
+	position: relative;
+	margin-bottom: 70px;
+	}
+	&__title:before{
 	content: "";
-	display: block;
-	width: 100px;
-	height: 4px;
-	background-color: black;
-	position: absolute;
-	left:50%;
-	top:50%;
-	
-}
-p{
-	width: 570px;
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 45px;
+    top:70px;
+    left:48%;
+    background-color: #dddbdb;
+	}
+	&__subtitle{
+	display: inline-block;
+	width: 100%;
+	max-width: 570px;
 	font-size: 16px;
 	line-height: 24px;
 	color: #3c3c3c;
-	font-family: "Lato";
 	font-weight: 300;
 	text-align: center;
+	}
+	&__link{
+		display:inline-block;
+
+	}
 }
-// a{
-// 	display: block;
-// 	width: 100%;
-// 	max-widt
-// }
-a:hover{
-	opacity: 1;
+
+.staff{
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+.staff__list{
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	position: relative;
+	margin-bottom: 20px;
+}
+.social{
+	position: absolute;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	width: 100%;
+  	height: 100%;
+    background-color: #008CBA;
+  	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: scale(0);
+  	transition: .7s ease;
+  	list-style: none;
+}
+.staff__list:hover .social {
+  transform: scale(1);
+}
+a{
+	width: 130px;
+}
+.staff__name{
+	font-size: 18px;
+	color: #282528;
+	font-weight: 700;
+	margin-bottom: 5px; 
+}
+.staff__position{
+	color: #3c3c3c;
 }

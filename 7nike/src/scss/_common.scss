@@ -1,22 +1,29 @@
-*{
-    margin: 0;
+* {
+	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-
 }
-html,body{
+
+html, body {
 	min-height: 100vh;
 }
-body{
-	color:$dark;
+
+body {
+	color: $dark;
 	background-color: $dark-blue;
-    display: flex;
+	font-family: $main-font;
+
+	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.container{
+
+.container {
 	width: 100%;
 	max-width: 680px;
 	margin: auto;
 	padding: 0 15px;
+}
+.t-upper{
+	text-transform: uppercase;
 }
