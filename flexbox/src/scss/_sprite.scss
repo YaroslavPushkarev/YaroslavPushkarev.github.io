@@ -37,7 +37,6 @@ html, body {
 .list__first{
 	width: 100%;
 	max-width: 740px;
-	background-image: url(../img/car.png);
 }
 .link_list{
 	display: flex;
@@ -46,11 +45,14 @@ html, body {
 	width: 100%;
 	max-width: 740px;
 }
+.link__first{
+	display: block;
+	background-image: url(../img/car.png);
+}
 .first__footer{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	
 	height: 540px;
 	max-width: 740px;
 	padding: 0 0 40px 40px;
@@ -81,7 +83,6 @@ html, body {
 	justify-content: flex-start;
 	padding: 30px 0 0 30px;
 	color: #000;
-	height:285px;
 }
 
 .date{
@@ -99,19 +100,17 @@ html, body {
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 1px;
+}
+
+.text{
 	margin-bottom: 50px;
 }
-.another{
-	margin-bottom: 80px;
-} 
-.text{
-	display: flex;
-	flex-direction: column;
-	justify-content:flex-start;
+.link__footer_withoutdate{
+	padding: 60px 20px;
 }
+
 .text_withoutdate{
-  padding: 60px 0 0 20px;
-  height: 100%;
+  margin-bottom: 80px;
 }
 .face{
 	width: 55px;
