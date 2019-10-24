@@ -88,8 +88,10 @@ body{
 .staff__list:hover .social {
   transform: scale(1);
 }
-a{
-	width: 130px;
+
+.social__link{
+    display: block;
+	padding-right: 10px;
 }
 .staff__name{
 	font-size: 18px;
