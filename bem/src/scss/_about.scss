@@ -1,0 +1,36 @@
+
+.about{
+	background: #00B3B3;
+	height: 100vh;
+ 	background-size: cover;
+}
+.about-main{
+	display: flex;
+	width: 100%;
+	justify-content:space-between;	
+	align-items: center;
+	padding-top: 75px;
+}
+
+.about-info{
+	width: 100%;
+	max-width: 500px;
+
+    &__title{
+	font-size: 90px;
+	color: #ffffff;
+	font-family: "Raleway";
+	font-weight: 700;
+	}
+    &__text{
+ 	font-size: 17px;
+	color: #ffffff;
+	font-family: "Raleway";
+	font-weight: 300;
+	margin-bottom:10px;
+	}
+	&__text:last-child{
+	margin-bottom: 0;
+	}
+
+}
