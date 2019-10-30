@@ -19,6 +19,7 @@
 	font-size: 50px;
 	color: #262626;
 	font-weight: 400;
+	text-decoration: none;
  	}
  	&__list{
      display: flex;
@@ -85,6 +86,9 @@
 .scroll{
 	margin: 0 auto;
 	padding-bottom: 60px;
+    &__link{
+    	display:block;
+    }
     &__sprite{
 	display: block;
 	background:url('../img/scroll.png') no-repeat;
