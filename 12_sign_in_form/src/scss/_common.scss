@@ -47,7 +47,7 @@ li:not(:last-child){
 .actions-list:focus:after {
    		width: 100%;
 }	
-label{
+.form__label{
     display: block;
 	width: 100%;
 	margin-bottom: 10px;
@@ -55,7 +55,11 @@ label{
 	color: #fbf6e4;
 }
 
-input{
-	width: 200px;
-	padding: 20px;
+.form__input{
+	display: block;
+	width: 260px;
+	background: rgba(0,0,0,0.1);
+	border:2px solid #9a85c7; 
+	padding: 10px;
+	margin-bottom: 10px;
 }
