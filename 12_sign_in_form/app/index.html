@@ -12,13 +12,30 @@
 	<div class="box">
 		<form class="form">
 			<ul class="form__actions">
-				<li><a class="actions-list" href="#">Sign In</a></li>
-				<li><a class="actions-list" href="#">Join Us</a></li>
+				<li class="actions-list">
+					<a class="actions-link" href="#">Sign In</a>
+				</li>
+				<li class="actions-list">
+					<a class="actions-link" href="#">Join Us</a>
+				</li>
 			</ul>
 			<label class="form__label" for="Username">Username</label>
-			<input class="form__input" type="text" name=""Username>
+			<input class="form__input" type="text" name="Username" required>
 			<label class="form__label" for="Password">Password</label>
-			<input class="form__input" type="text" name="Password">
+			<input class="form__input" type="text" name="Password" required>
+			<div class="form-checkbox">
+				<input class="checkbox" type="checkbox" id="checkbox">
+				<label class="name-checkbox" for="checkbox">Keep me signed in</label>
+			</div>
+			<button class="btn" type="submit">Sign In</button>
+			<ul class="footer__list">
+					<li>
+						<a class="footer__link" href="#">Forgot password</a>
+					</li>
+					<li>
+						<a class="footer__link" href="#">Create an account</a>
+					</li>
+				</ul>
 		</form>
 	</div>
 	<script src="js/bundle.js"></script>

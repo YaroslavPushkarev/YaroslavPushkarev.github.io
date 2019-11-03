@@ -6,47 +6,50 @@
 
 
 .box{
+	width: 100%;
+	max-width: 400px;
 	margin:0 auto;
+
+
 }
 .form{
 	padding: 50px 70px;
-	background: url('../img/bg.png')no-repeat ;
-	box-shadow: 20px 2px 2px 2px black;
+	background: url('../img/bg.png') no-repeat;
+	box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.8);
 
 	&__actions{
 		display: flex;
 		list-style: none;
-		margin-bottom: 50px;
-
-    }	 
+		margin-bottom: 40px;
+    }
 }
 
 li:not(:last-child){
    margin-right: 20px;
 }
-.actions-list{
+.actions-link{
 	text-decoration: none;
 	font-size: 18px;
 	color: #e1c2f1;
 	font-family: "Quicksand",sans-serif;
 	font-weight: 700;
 }
-.actions-list:hover{
+.actions-link:hover{
 	color: #fbf6e4;
 }
-.actions-list:after{
+.actions-link:after{
 
 	background-color: #ff6033;
     display: block;
     content: "";
-    height: 3px;
+    height: 2px;
     width: 0;
     transition: width .4s ease;
 }
-.actions-list:hover:after,
-.actions-list:focus:after {
+.actions-link:hover:after,
+.actions-link:focus:after {
    		width: 100%;
-}	
+}
 .form__label{
     display: block;
 	width: 100%;
@@ -54,12 +57,68 @@ li:not(:last-child){
 	font-family: "Quicksand",sans-serif;
 	color: #fbf6e4;
 }
-
 .form__input{
 	display: block;
 	width: 260px;
 	background: rgba(0,0,0,0.1);
 	border:2px solid #9a85c7; 
 	padding: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
+.form-checkbox{
+	display: flex;
+	align-items: center;
+	margin-bottom:40px;
+}
+.checkbox{
+	background: red;
+	margin-right: 7px;
+}
+.name-checkbox{
+	font-size: 13px;
+	color: #fbf6e4;
+	font-family: "Quicksand", sans-serif;
+	font-weight: 700;
+}
+.btn{
+	width: 100%;
+	padding: 15px 0;
+	background: #23ae92;
+	border: transparent;
+	font-size: 18px;
+	color: #fbf6e4;
+	font-family: "Quicksand";
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.btn:hover{
+  color: #23ae92;
+  background: #fbf6e4;
+  cursor: pointer;
+
+}
+.footer__list{
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+.footer__link{
+		display: block;
+		font-size: 13px;
+		color: #b9b9cc;
+		font-family: "Quicksand";
+		font-weight: 400;
+		text-decoration:none;
+		opacity: .5;
+}
+.footer__link:after{
+	content: '';
+	height: 1px;
+	display: block;
+	background-color: #b9b9cc;
+	width: 100%;
+}
+.footer__link:hover{
+	opacity: 1;
+}
+
