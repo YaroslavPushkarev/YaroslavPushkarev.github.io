@@ -1,0 +1,18 @@
+.services{
+	background-image: url("..//img/services-bg.png");
+	background-size: cover;
+	padding: 120px 0;
+}
+.content_white{
+	border: 2px solid $white;
+	border-top:  transparent;
+}
+.content_white:before{
+	background-color:$white;
+}
+.content_white:after{
+	background-color:$white;
+}
+.title_white, .text_white{
+	color: $white;
+}

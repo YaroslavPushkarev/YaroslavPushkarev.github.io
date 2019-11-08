@@ -1,0 +1,61 @@
+.our-works{
+	width:100%;
+
+
+	&__list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	list-style: none;
+	height: 490px;
+	}
+
+	&__item{
+		width: 100%;
+		max-width: 25%;
+		height: 48%;
+	}
+
+	&__item:nth-child(2), &__item:nth-child(5) {
+		max-width: 49%;
+	}
+	&__link{
+		display: flex;
+		align-items: flex-end;
+		height: 100%;
+		padding: 0px 0px 40px 40px;
+		color: $white;
+		font-size: 34px;
+		text-decoration: none;
+		font-family: $main-font;
+		text-transform: uppercase;
+
+		&.topworkz{
+			background-image: url('../img/topworkz.png');
+			background-size: cover;
+		}
+		&.joint {
+			background-image: url('../img/joint.jpg');
+			background-size: cover;
+		}
+		&.market {
+			background-image: url('../img/market.jpg');
+			background-size: cover;
+		}
+		&.worktop {
+			background-image: url('../img/worktop.jpg');
+			background-size: cover;
+		}
+		&.lable {
+			background-image: url('../img/lable.jpg');
+			background-size: cover;
+		}
+		&.kyiv {
+			background-image: url('../img/kyiv.jpg');
+			background-size: cover;
+		}
+
+	}
+}
+
+
