@@ -24,7 +24,7 @@
     }
 }
 
-li:not(:last-child){
+.action-list:not(:last-child){
    margin-right: 20px;
 }
 .actions-link{
@@ -59,7 +59,7 @@ li:not(:last-child){
 }
 .form__input{
 	display: block;
-	width: 260px;
+	width: 100%;
 	background: rgba(0,0,0,0.1);
 	border:2px solid #9a85c7; 
 	padding: 10px;
