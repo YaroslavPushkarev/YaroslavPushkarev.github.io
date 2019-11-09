@@ -5,12 +5,12 @@
 .content{
 	display: flex;
 	flex-direction: column;
-	justify-content:space-between;
+	justify-content:center;
 	align-items: center;
 	border: 2px solid $black;
 	border-top:  transparent;
 	position: relative;
-	padding: 60px 160px 40px;
+	padding: 60px 0 40px;
 	text-align: center;
 }
 
@@ -45,6 +45,7 @@
 	text-transform: uppercase;
 }
 .text{
+	max-width:560px;
 	display: flex;
 	font-size: 16px;
 	line-height: 24px;
