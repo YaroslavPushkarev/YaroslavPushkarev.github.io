@@ -12,10 +12,12 @@
 }
 
 .header-svg{
-	fill: $white;
-    stroke: $white;
     width: 70px;
     height: 70px;
+}
+.header-svg__logo{
+	fill: $white;
+    stroke: $white;
 }
 .header__text{
 	display: flex;
