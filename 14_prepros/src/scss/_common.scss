@@ -1,0 +1,113 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+}
+.container{
+	width: 100%;
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.section{
+	padding: 100px 0 ;
+
+	&__head{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		text-transform: uppercase;
+		position: relative;
+		padding-bottom: 135px;
+	}
+	&__head:before{
+		display: block;
+		content: '';
+		width:210px;
+		height: 1px;
+		background: $yellow;
+		position: absolute;
+		bottom: 75px;
+		left:340px;
+
+	}
+	&__head:after{
+		display: block;
+		content: '';
+		width:210px;
+		height: 1px;
+		background: $yellow;
+		position: absolute;
+		bottom: 75px;
+		left:585px;
+
+	}
+}
+.subtitle{
+	font-size: 18px;
+	color: $grey;
+	font-family: $main-font;
+	font-weight: 500;
+}
+.title{
+	font-size: 60px;
+	color: $yellow;
+	font-family: $title-font;
+	font-weight: 900;
+}
+
+.team{
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+
+	&__photo{
+		width: 500px;
+		height: 300px;
+		background: red;
+	}
+}
+.description{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 500px;
+
+	&__title{
+		font-size: 36px;
+		letter-spacing: 1px;
+		color: $grey;
+		font-family: $title-font;
+		font-weight: 900;
+		text-align: center;
+		text-transform: capitalize;
+	}
+	&__subtitle{
+	  	font-size: 24px;
+		color: $grey;
+		font-family: $main-font;
+		font-weight: 400;
+		text-align: center;
+		text-transform: capitalize;
+	}
+	&__text{
+		font-size: 14px;
+		color: $grey;
+		font-family: $main-font;
+		font-weight: 500;
+		text-align: center;
+	}
+	&__btn{
+		width:120px;
+		padding:5px 0;
+		background: white;
+		border: 1px solid $yellow;
+		text-transform: uppercase;
+		font-size: 14px;
+		color: $grey;
+		font-family: $profile-font;
+		font-weight: 700;
+	}
+}
