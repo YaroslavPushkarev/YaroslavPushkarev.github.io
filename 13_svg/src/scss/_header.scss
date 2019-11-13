@@ -12,10 +12,12 @@
 }
 
 .header-svg{
-	fill: $white;
-    stroke: $white;
     width: 70px;
     height: 70px;
+}
+.header-svg__logo{
+	fill: $white;
+    stroke: $white;
 }
 .header__text{
 	display: flex;
@@ -60,4 +62,39 @@
 	left:9px;
 	background: $white;
 
+}
+
+@media only screen and (max-width: 480px) {
+	.title-main{
+		font-size: 24px;
+		letter-spacing: 7px;
+		margin-bottom: 20px;
+	}
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+		.title-main{
+			font-size: 35px;
+			margin-bottom: 30px;
+
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.title-main{
+		font-size: 40px;
+		margin-bottom: 35px;
+
+	}
+}
+@media only screen and (min-width: 1024px) and (max-width: 1224px){
+	.title-main{
+		font-size: 50px;
+		margin-bottom: 40px;
+	}
+}
+
+@media only screen and (min-width: 1225px){
+	.title-main{
+		font-size: 54px;
+		margin-bottom: 45px;
+	}
 }

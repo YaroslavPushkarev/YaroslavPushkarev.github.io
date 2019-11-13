@@ -5,12 +5,12 @@
 .content{
 	display: flex;
 	flex-direction: column;
-	justify-content:space-between;
+	justify-content:center;
 	align-items: center;
 	border: 2px solid $black;
 	border-top:  transparent;
 	position: relative;
-	padding: 60px 160px 40px;
+	padding: 60px 0 40px;
 	text-align: center;
 }
 
@@ -45,6 +45,7 @@
 	text-transform: uppercase;
 }
 .text{
+	max-width:560px;
 	display: flex;
 	font-size: 16px;
 	line-height: 24px;
@@ -56,4 +57,65 @@
 }
 .text:last-child{
 	margin-bottom: 0;
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	.about{
+	padding: 20px 0;
+	}
+	.content{
+	padding: 20px 0 20px;
+	}
+
+	.title{
+	font-size: 22px;
+	top:-15px;
+	}
+	.content:before{
+		width: 15%;
+	}
+
+	.content:after{
+		width: 15%;
+	}
+	.text{
+		max-width: 270px;
+	}
+}
+@media only screen and (min-width: 481px) and (max-width: 767px){
+	.text{
+		max-width: 420px;
+	}
+	.content:before{
+		width:15%;
+	}
+
+	.content:after{
+		width: 15%;
+	}
+}
+@media only screen and (min-width: 1024px) and (max-width: 1224px){
+		.title{
+	font-size: 29px;
+	top:-15px;
+}
+	.content:before{
+		width:15%;
+	}
+
+	.content:after{
+		width: 15%;
+	}
+	.text{
+		max-width: 450px;
+	}
+}
+
+@media only screen and (min-width: 1225px){
+	.title{
+		font-size: 30px;
+}
+	
+	.text{
+		max-width: 500px;
+	}
 }
