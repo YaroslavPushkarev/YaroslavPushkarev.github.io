@@ -62,11 +62,57 @@
 	justify-content: space-between;
 	align-items: center; 
 
-	&__photo{
-		width: 500px;
-		height: 300px;
-		background: red;
-	}
+}
+.team__photo{
+	border: 1px solid $yellow;
+	position: relative;
+}
+img{
+	display: block;
+}
+.team__photo::after{
+	content: '';
+	display: block;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	border-top: 1px solid $yellow;
+	border-right: 1px solid $yellow;
+    top:-15px;
+	right: -15px;
+}
+.team__photo::before{
+	content: '';
+	display: block;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	border-top: 1px solid $yellow;
+	border-left: 1px solid $yellow;
+    top:-15px;
+	left: -15px;
+}
+.img::after{
+	content: '';
+	display: block;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	border-bottom: 1px solid $yellow;
+	border-right: 1px solid $yellow;
+    bottom:-15px;
+	right: -15px;
+}
+.img::before{
+	content: '';
+	display: block;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	border-bottom: 1px solid $yellow;
+	border-left: 1px solid $yellow;
+    bottom:-15px;
+	left: -15px;
 }
 .description{
 	display: flex;
@@ -110,4 +156,23 @@
 		font-family: $profile-font;
 		font-weight: 700;
 	}
+}
+
+.arrow-left{
+	display: block;
+	width: 15px;
+	height: 15px;
+	border-top: 2px solid $yellow;
+	border-left: 2px solid $yellow;
+	transform: rotate(-44deg);
+	cursor: pointer;
+}
+.arrow-right{
+	display: block;
+	width: 15px;
+	height: 15px;
+	border-top: 2px solid $yellow;
+	border-left: 2px solid $yellow;
+	transform: rotate(136deg);
+	cursor: pointer;
 }
