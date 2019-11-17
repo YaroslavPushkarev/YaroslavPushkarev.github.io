@@ -5,12 +5,12 @@
 }
 .container{
 	width: 100%;
-	max-width: 1170px;
+	max-width: 1140px;
 	padding: 0 15px;
 	margin: 0 auto;
 }
 .section{
-	padding: 100px 0 ;
+	padding: 100px 0 0;
 
 	&__head{
 		display: flex;
@@ -19,7 +19,6 @@
 		justify-content: space-between;
 		text-transform: uppercase;
 		position: relative;
-		padding-bottom: 135px;
 	}
 	&__head:before{
 		display: block;
@@ -28,8 +27,8 @@
 		height: 1px;
 		background: $yellow;
 		position: absolute;
-		bottom: 75px;
-		left:340px;
+		bottom: 5px;
+		left:330px;
 
 	}
 	&__head:after{
@@ -39,8 +38,8 @@
 		height: 1px;
 		background: $yellow;
 		position: absolute;
-		bottom: 75px;
-		left:585px;
+		bottom: 5px;
+		left:570px;
 
 	}
 }
@@ -49,25 +48,44 @@
 	color: $grey;
 	font-family: $main-font;
 	font-weight: 500;
+	margin-bottom: 20px;
 }
 .title{
 	font-size: 60px;
 	color: $yellow;
 	font-family: $title-font;
 	font-weight: 900;
+	margin-bottom: 40px;
+}
+.wrapper{
+	display: flex;
+	align-items: center;
 }
 
 .team{
 	display: flex;
 	justify-content: space-between;
-	align-items: center; 
-
+	align-items: center;
+	width: 100%;
+	max-width: 1005px;
+	margin:auto; 
+	height: 600px;
+	position: relative;
+}
+.team:before{
+	content: '';
+	display:block;
+	height:550px;
+	width: 1px;
+	background:  $yellow;
+	position: absolute;
+	left:50%;
 }
 .team__photo{
 	border: 1px solid $yellow;
 	position: relative;
 }
-img{
+.img-kabir{
 	display: block;
 }
 .team__photo::after{
@@ -115,11 +133,12 @@ img{
 	left: -15px;
 }
 .description{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 	width: 100%;
-	max-width: 500px;
+	max-width: 422px;
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content: space-around;
 
 	&__title{
 		font-size: 36px;
@@ -129,14 +148,36 @@ img{
 		font-weight: 900;
 		text-align: center;
 		text-transform: capitalize;
+		position: relative;
+		margin-bottom: 60px;
+	}
+	&__title:after{
+		position: absolute;
+		content: '';
+		display: block;
+		height: 1px;
+		width: 100px;
+		background:$yellow; 
+		left: 50%;
+		bottom: -30px;
+		transform: translateX(-50%);
+
 	}
 	&__subtitle{
 	  	font-size: 24px;
 		color: $grey;
 		font-family: $main-font;
 		font-weight: 400;
-		text-align: center;
 		text-transform: capitalize;
+		margin-bottom: 30px;
+	}
+	&__list
+	{
+		display: flex;
+		list-style: none;
+		justify-content: space-between;
+		width: 135px;
+		margin-bottom: 30px;
 	}
 	&__text{
 		font-size: 14px;
@@ -144,6 +185,16 @@ img{
 		font-family: $main-font;
 		font-weight: 500;
 		text-align: center;
+		margin-bottom: 30px;
+		position: relative;
+	}
+	&__text:after{
+		display: block;
+		content: '';
+		max-width: 35px;
+    	margin: 0 auto;
+   		border-bottom: 4px dashed $yellow;
+    	padding-top: 20px;
 	}
 	&__btn{
 		width:120px;
@@ -155,6 +206,12 @@ img{
 		color: $grey;
 		font-family: $profile-font;
 		font-weight: 700;
+		transition: .3s;
+	}
+	&__btn:hover{
+		color: white;
+		background: $yellow;
+
 	}
 }
 
@@ -175,4 +232,29 @@ img{
 	border-left: 2px solid $yellow;
 	transform: rotate(136deg);
 	cursor: pointer;
+}
+.footer{
+	display: flex;
+	justify-content: center;
+	padding-bottom: 50px;
+
+	&__carousel{
+	display: flex;
+	justify-content: space-between;
+	width: 50px;
+	list-style: none;
+	}
+
+	&__circle:hover{
+	border: 1px solid $yellow;
+	background: white;
+	}
+    &__circle{
+	display: block;
+	height: 10px;
+	width: 10px;
+	background: $yellow;
+	border-radius: 50%;
+	transition: .3s;
+	}
 }
