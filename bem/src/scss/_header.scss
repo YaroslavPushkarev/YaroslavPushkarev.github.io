@@ -14,7 +14,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	
+
     &__logo{
 	font-family: 'Pacifico', sans-serif;
 	font-size: 50px;
@@ -49,9 +49,9 @@
 		&:hover:before,
 		&:focus:before {
    		width: 100%;
-		}	
+		}
 	}
-}	
+}
 .info{
 	width: 100%;
 	max-width: 385px;
@@ -98,4 +98,35 @@
     height: 40px;
     background-position: -5px -5px;
 	}
+}
+.line{
+   width: 25px;
+   height: 3px;
+   background: red;
+   margin-bottom: 5px;
+   display: none;
+}
+
+
+@media only screen  and (min-width: 320px) and (max-width: 720px){
+	body{
+		overflow-x: hidden;
+	}
+    .nav__list{
+		position: absolute;
+		max-width: 300px;
+		right: 0px;
+		height:62vh;
+		top:8vh;
+		background: green;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		opacity: .7;
+		transform: translateX(100%);
+	}
+
+    .line{
+    	display: block;
+    }
 }
