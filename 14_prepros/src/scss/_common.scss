@@ -18,30 +18,32 @@
 		align-items: center;
 		justify-content: space-between;
 		text-transform: uppercase;
-		position: relative;
 	}
-	&__head:before{
+}
+.logo{
+	display: block;
+	position: relative;
+}
+
+.logo:before{
 		display: block;
 		content: '';
 		width:210px;
 		height: 1px;
 		background: $yellow;
 		position: absolute;
-		bottom: 5px;
-		left:330px;
-
-	}
-	&__head:after{
+		top:8px;
+		right: 30px;
+}
+.logo:after{
 		display: block;
 		content: '';
 		width:210px;
 		height: 1px;
 		background: $yellow;
 		position: absolute;
-		bottom: 5px;
-		left:570px;
-
-	}
+		top: 8px;
+		left:30px;
 }
 .subtitle{
 	font-size: 18px;
@@ -214,7 +216,10 @@
 
 	}
 }
-
+.link{
+	display: block;
+	font-size: 0;
+}
 .arrow-left{
 	display: block;
 	width: 15px;
@@ -222,7 +227,6 @@
 	border-top: 2px solid $yellow;
 	border-left: 2px solid $yellow;
 	transform: rotate(-44deg);
-	cursor: pointer;
 }
 .arrow-right{
 	display: block;
@@ -231,7 +235,6 @@
 	border-top: 2px solid $yellow;
 	border-left: 2px solid $yellow;
 	transform: rotate(136deg);
-	cursor: pointer;
 }
 .footer{
 	display: flex;
@@ -243,9 +246,11 @@
 	justify-content: space-between;
 	width: 50px;
 	list-style: none;
+	cursor: pointer;
 	}
 
-	&__circle:hover{
+	&__circle:hover,
+	&__circle.active{
 	border: 1px solid $yellow;
 	background: white;
 	}
