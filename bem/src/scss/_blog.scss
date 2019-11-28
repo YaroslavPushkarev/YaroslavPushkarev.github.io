@@ -1,10 +1,10 @@
-.cahee__section {
+.blog {
 	padding: 100px 0;
 }
 
-.t-lower {
-	text-transform: lowercase;
-}
+// .t-lower {
+// 	text-transform: lowercase;
+// }
 
 .cahee__btn {
 	display: block;
@@ -36,6 +36,7 @@
 
 .cahee__title {
 	font-size: 90px;
+	color: #fff;
 	font-weight: bold;
 	text-align: center;
 	text-transform: capitalize;
@@ -51,6 +52,7 @@
 	text-align: center;
 	line-height: 1.4;
 	margin-bottom: 50px;
+	color: #fff;
 }
 
 .blog__list {
@@ -128,18 +130,56 @@
 	bottom: 0;
 	padding: 30px;
 	width: 100%;
-	background: -moz-linear-gradient(top, rgba(125,185,232,0) 0%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(125,185,232,0) 0%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
-/*
-#b07cf7 - violet
-#f72b3b - pink
-#fff
-#000
-*/
 
 .bg_green {
 	background-color: green;
+}
+@media screen and (max-width: 480px) and (min-width: 320px){
+	.blog{
+		padding: 10px 0;
+
+
+		&__list{
+			flex-direction: column;
+			align-items: center;
+			height: 945px;
+		}
+		&__link{
+			min-width: 320px;
+		}
+	}
+	.cahee__title{
+		margin-bottom:5px;
+	}
+	.cahee__subtitle{
+		display: none;
+	}
+}
+@media screen and (max-width: 767px) and (min-width: 481px){
+	.blog__link{
+		min-width: 300px;
+	}
+	.cahee__subtitle{
+		display: none;
+	}
+	.blog__list{
+		flex-direction: column;
+		align-items: center;
+		height: 945px;
+	}
+}
+@media screen and (max-width: 999px) and (min-width: 768px){
+	.blog__list{
+		flex-direction: column;
+		align-items: center;
+		height: 945px;
+	}
+}
+@media screen and (max-width: 1200px) and (min-width: 1000px){
+	.blog__link{
+		min-width: 330px;
+	}
 }

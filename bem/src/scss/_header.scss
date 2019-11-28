@@ -1,15 +1,14 @@
 
 .header{
 	background: url(../img/bg1.png)  no-repeat;
-	height: 100%;
  	background-size: cover;
- 	padding-top: 50px;
+
 }
 .header-main{
+	height: 100vh;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
-	height: 100vh;
 }
 .nav{
 	display: flex;
@@ -114,10 +113,13 @@
 
 @media  screen and (max-width:768px){
 	.header{
-		padding: 0;
+		padding: 20px 0;
 	}
 	.info__btn{
 		width: 100%;
+	}
+	.scroll{
+		display: none;
 	}
 	.nav__list{
 		position:absolute;

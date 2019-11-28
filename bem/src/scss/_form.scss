@@ -88,3 +88,29 @@
 		color: $black;
 	}
 }
+
+@media screen and(min-width: 320px) and (max-width: 620px){
+	.form{
+		padding: 10px 0;
+
+		&__header{
+			margin-bottom: 10px;
+		}
+
+		&__title{
+			font-size: 50px;
+			margin-bottom: 10px;
+		}
+	}
+	.box{
+		flex-direction: column;
+		height: 535px;
+
+	}
+	.cahee-form__input{
+		border:1px solid #f2f4f6;
+	}
+	.contact__title, .contact__subtitle{
+		text-align: center;
+	}
+}
