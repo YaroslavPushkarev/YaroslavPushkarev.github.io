@@ -248,6 +248,9 @@
 	list-style: none;
 	cursor: pointer;
 	}
+	&__link{
+		display: block;
+	}
 
 	&__circle:hover,
 	&__circle.active{

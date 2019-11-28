@@ -1,6 +1,21 @@
+@import 'vars';
 @import 'common';
 @import 'about';
 @import 'header';
-.about{
+@import 'services';
+@import 'gallery';
+@import 'subscribe';
+@import 'blog';
+@import 'form';
+@import 'footer';
+
+.about,
+.header,
+.services,
+/* .gallery, */
+.subscribe,
+.blog,
+.form,
+.footer{
 	display: none;
 }
