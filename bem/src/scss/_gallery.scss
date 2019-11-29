@@ -1,12 +1,14 @@
 .gallery{
 	background: #ffe92f;
 	padding: 100px 0;
+	text-align: center;
 
 	&__head{
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
+		margin-bottom: 50px;
 	}
 	&__title{
 		font-size: 90px;
@@ -23,7 +25,7 @@
 		font-weight: 300;
 		text-align: center;
 		max-width: 630px;
-		margin-bottom: 50px;
+		
 	}
 	&__list{
 	display: flex;
@@ -66,8 +68,7 @@
 	display: flex;
 	width: 100%;
 	max-width: 760px;
-	height: 550px;
-	padding-top: 540px;
+	padding-top: 550px;
 	flex-basis: 66%;
 }
 .aside{
@@ -85,24 +86,23 @@
 	padding-top: 400px;
 	flex-basis: 49%;
 }
-.gallery__form{
-	display: flex;
-	justify-content: center;
-}
 .gallery__btn{
-	text-transform: uppercase;
-	font-size: 20px;
-	color: #ffffff;
-	font-family: "Raleway";
-	background: #5585a2;
-	font-weight: 300;
-	border: none;
-	padding: 20px 40px;
-	cursor: pointer;
+    display: inline-flex;
+    width: 100%;
+    font-size: 20px;
+    max-width: 200px;
+    padding: 20px 0;
+    justify-content: center;
+    text-transform: uppercase;
+    background-color: #5585a2;
+    color: #fff;
 }
 @media screen and (max-width: 650px){
 	.gallery{
 		padding: 10px 0;
+		&__head{
+			margin-bottom:10px;
+		}
 		&__list{
 		flex-direction: column;
 		flex-wrap: nowrap;
