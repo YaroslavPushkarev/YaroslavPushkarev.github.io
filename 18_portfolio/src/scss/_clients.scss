@@ -1,0 +1,14 @@
+.clients{
+	background: #f1f8ff;
+	padding:100px 0;
+
+	&__list{
+		display: flex;
+		width: 100%;
+		max-width: 1060px;
+		justify-content: space-between;
+	}
+	&__link{
+		display: block;
+	}
+}
