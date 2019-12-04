@@ -35,7 +35,7 @@ let num = prompt('Enter number');
 
 let age = prompt('Enter your age');
 
-if (age <= 2){
+if (age <= 12){
     alert('child')
 }else if (age <=18){
     alert('teen')
