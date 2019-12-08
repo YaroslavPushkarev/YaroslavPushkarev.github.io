@@ -1,0 +1,23 @@
+.about{
+	min-height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__text{
+	font-size: 14px;
+	letter-spacing: 0px;
+	color: $other-text;
+	font-family: $second-font;
+	font-weight: 300;
+	}
+
+	&__inner{
+		min-height: 265px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items:flex-start;
+
+	}
+}

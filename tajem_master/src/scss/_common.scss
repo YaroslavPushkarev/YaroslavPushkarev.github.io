@@ -24,8 +24,7 @@ a {
 	justify-content: space-between;
 }
 .button{
-	display: block;
-	margin: 0 auto;
+	display: inline-flex;
 	border: 1px solid  $cyan;
 	border-radius: 2px;
 	max-width: 130px;
@@ -40,4 +39,12 @@ a {
 .button:hover{
 	color: $cyan;
 	text-decoration: none;
+}
+.title{
+	font-size: 22px;
+	letter-spacing: 1px;
+	color: $other-text;
+	font-family: $main-font;
+	font-weight: 700;
+	text-transform: uppercase;
 }
