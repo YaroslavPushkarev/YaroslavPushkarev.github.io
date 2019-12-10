@@ -1,0 +1,119 @@
+.footer{
+	background: url('/img/bg-footer.png')no-repeat;
+	background-size: cover;
+	position: relative;
+	padding: 70px 0;
+
+	&::before{
+		@include overlay;
+	}
+
+	&__link{
+
+	font-size: 14px;
+	letter-spacing: 0px;
+	line-height: 26px;
+	color: #ffffff;
+	font-family: "Roboto";
+	font-weight: 400;
+	text-transform: uppercase;
+	}
+
+	&__link:hover{
+		 color: $cyan;
+		 text-decoration: none;
+	}
+
+
+	&__list{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__text{
+		font-size: 14px;
+		letter-spacing: 0px;
+		line-height: 26px;
+		color: $white;
+		font-family: $second-font;
+		font-weight: 300;
+		max-width: 240px;
+	}
+
+	&__title{
+		font-size: 15px;
+		letter-spacing: 1px;
+		color:$white;
+		font-family: $second-font;
+		font-weight: 900;
+		text-transform: uppercase;
+
+	}
+	&__number{
+		font-size: 14px;
+		color: $white;
+		font-family: $second-font;
+		font-weight: 300;
+	}
+	&__number:hover{
+		 color: $white;
+		 text-decoration: none;
+	}
+
+	&__social{
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 250px;
+		margin: 0;
+	}
+
+	&__input{
+		display: block;
+		padding: 15px 35px;
+		background-color: rgba(0, 0, 0, 0.1);
+		color: $grey;
+		border:1px solid $grey;
+		width: 100%;
+		max-width: 210px;
+
+	}
+	&__btn{
+		padding: 17px 30px;
+		background: #a099b3;
+		opacity: .8;
+	}
+	&__address{
+			display: flex;
+	}
+	&__tel{
+			display: flex;
+	}
+
+	&__inner{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		min-height: 110px;
+	}
+
+	&__form{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 300px;
+	flex-wrap: wrap;
+	}
+}
+.fab{
+	color: $white;
+}
+.fab:hover{
+	color: $cyan;
+}
+.fas	{
+	color: $white;
+	margin-right: 10px;
+}
+.fa-phone{
+		color: $white;
+}

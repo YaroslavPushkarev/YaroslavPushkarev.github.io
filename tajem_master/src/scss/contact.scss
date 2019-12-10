@@ -1,0 +1,39 @@
+.contact{
+	padding: 70px 0;
+
+	&__inner{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	min-height: 470px;
+	}
+	&__form{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 460px;
+	height: 400px;
+	}
+	&__input{
+     	padding: 10px 20px;
+     }
+     &__logo{
+     	display: flex;
+     }
+}
+.title_contact{
+	text-align: left;
+}
+.title_contact-right{
+	text-align: left;
+	margin:0;
+}
+a{
+	text-align: center;
+}
+// .wrap{
+// 	display: flex;
+// 	flex-wrap: wrap;
+// }

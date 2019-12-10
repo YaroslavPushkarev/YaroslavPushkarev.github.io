@@ -1,0 +1,65 @@
+<% const logo = [
+{
+	name:'img/zara.png'
+},
+{
+	name:'img/mango.png'
+},
+{
+	name:'img/newyork.png'
+},
+{
+	name:'img/gucci.png'
+},
+{
+	name:'img/calvin.png'
+},
+{
+	name:'img/nike.png'
+},
+{
+	name:'img/converse.png'
+},
+{
+	name:'img/puma.png'
+},
+{
+	name:'img/levis.png'
+},
+{
+	name:'img/bong.png'
+}
+]%>
+
+<section class="contact">
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-12 col-lg-6 ">
+				<h2 class="title title_contact">give us a good new</h2>
+				<div class="contact__inner">
+					<form method="get" class="contact__form">
+						<input class="contact__input" type="text" name="name" placeholder="Name" required>
+						<input class="contact__input" type="email" name="email" placeholder="Email" required>
+						<input class="contact__input" type="text" name="subject" placeholder="Subject" required>
+						<textarea class="contact__input" cols="20" rows="7" name="text"  placeholder="Your message"></textarea>
+					</form>
+					<a class="button" href="#">submit</a>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6 ">
+				<h2 class="title title_contact-right">our happy client</h2>
+				<div class="contact__inner">
+					<div class="row justify-content-between">
+						<% logo.forEach(img => {%>
+						<div class="col-9 col-lg-6 py-4 justify-content-center">
+							<a class="contact__logo" href="#">
+								<img src="<%= img.name %>" alt="">
+							</a>
+						</div>
+						<%})%>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

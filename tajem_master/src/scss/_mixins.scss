@@ -1,0 +1,22 @@
+@mixin overlay{
+		content: "";
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		background: $overlay;
+		opacity: .9;
+}
+
+@mixin line{
+		content: '';
+		display: block;
+		height: 1px;
+		width: 50px;
+		background: $grey;
+		position: absolute;
+		right: 50%;
+		bottom: -30px;
+		transform: translateX(50%);
+}

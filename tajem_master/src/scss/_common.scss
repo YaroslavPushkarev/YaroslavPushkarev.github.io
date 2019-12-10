@@ -24,16 +24,16 @@ a {
 	justify-content: space-between;
 }
 .button{
-	display: inline-flex;
+	display: flex;
 	border: 1px solid  $cyan;
 	border-radius: 2px;
-	max-width: 130px;
 	color: $cyan;
 	text-align:center;
-	padding: 15px 15px;
+	padding: 15px 13px;
 	font-size: 16px;
 	font-family: $other-font;
 	font-weight: 400;
+	justify-content: center;
 	text-transform: uppercase;
 }
 .button:hover{
@@ -47,4 +47,41 @@ a {
 	font-family: $main-font;
 	font-weight: 700;
 	text-transform: uppercase;
+	margin-bottom: 20px;
+	text-align:center;
+}
+.title-white{
+	color: $white;
+}
+.subtitle{
+	font-size: 16px;
+	letter-spacing: 1px;
+	color:$grey;
+	font-family: $second-font;
+	font-weight: 900;
+	text-align: center;
+	text-transform:uppercase;
+	position: relative;
+}
+.subtitle:before{
+		content: '';
+		display: block;
+		height: 1px;
+		width: 50px;
+		background: #7a7a7a;
+		position: absolute;
+		right: 50%;
+		bottom: -30px;
+		transform: translateX(50%);
+}
+
+.subtitle-white{
+	color: $white;
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-family: $second-font;
+	font-weight: 900;
+	text-align: center;
+	text-transform:uppercase;
+	position: relative;
 }

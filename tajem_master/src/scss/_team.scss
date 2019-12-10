@@ -1,0 +1,46 @@
+.team{
+	background: url("/img/team.png") no-repeat;
+	background-size: cover;
+	padding: 70px 0;
+	position: relative;
+
+	&:before{
+		@include overlay;
+	}
+
+	&__cards{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 310px;
+		border: 2px solid $grey;
+		border-top:transparent;
+	}
+	&__title{
+		font-size: 14px;
+		letter-spacing: 1px;
+		color: $white;
+		font-family:$second-font;
+		font-weight: 900;
+		text-transform: uppercase;
+	}
+	&__subtitle{
+		font-size: 13px;
+		color: #9595a0;		
+		font-family:$second-font;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+	&__subtitle-footer{
+		font-size: 14px;
+		letter-spacing: 1px;
+		color: #f3f3f3;
+		font-family: $second-font;
+		font-weight: 300;
+		text-align: center;
+	}
+}
+.button_team{
+	padding: 15px 13px;
+}

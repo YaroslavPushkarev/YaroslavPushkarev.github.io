@@ -1,0 +1,29 @@
+.work{
+	padding: 70px 0;
+
+	&__arrow{
+		display: block;
+		height: 15px;
+		width: 15px;
+		border-right: 1px solid $grey;
+		border-bottom: 1px solid $grey;
+		border-top: transparent;
+		border-left: transparent;
+		transform: rotate(-45deg);
+		margin:0;
+	}
+	&__link{
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	&__subtitle{
+		font-size: 14px;
+		letter-spacing: 1px;
+		color: $other-text;
+		font-family:$second-font;
+		font-weight: 300;
+		margin:0;
+	}
+}
+

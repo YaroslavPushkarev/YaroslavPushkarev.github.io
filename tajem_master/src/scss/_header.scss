@@ -6,13 +6,7 @@
 	position: relative;
 
 		&::before {
-		content: "";
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		background: linear-gradient(45deg, rgba($overlay,1) 0%, rgba($overlay,0.6) 100%);
-		position: absolute;
+			@include overlay;
 	}
 	&__img{
 		margin-right: 20px;
@@ -81,13 +75,18 @@
 	&__carousel{
 		display: flex;
 		justify-content: space-between;
-		max-width: 55px;
+		margin:0;
 	}
 }
 .header__carousel-item{
-	display: block;
+	display: flex;
+	justify-content: center;
 	width: 9px;
 	height: 9px;
 	border: 1px solid $cyan;
 	border-radius: 50%;
+}
+.header__carousel-item.active{
+    background-color: $cyan;
+    border-color: $cyan;
 }
