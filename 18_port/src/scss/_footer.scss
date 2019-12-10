@@ -34,3 +34,11 @@
 .btn_footer{
 		padding: 20px 70px;
  }
+
+
+@media  screen and (min-width: 320px) and (max-width: 575px) {
+
+	.footer-wrap{
+		flex-direction: column;
+	}
+}

@@ -35,3 +35,8 @@
 	font-weight: 400;
 	text-align: center;
 }
+@media  screen and (min-width: 360px) and (max-width: 675px) {
+	.expert__list{
+		justify-content: center;
+	}
+}

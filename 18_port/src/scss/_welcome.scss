@@ -153,3 +153,24 @@
 .scroll{
 	display: block;
 }
+
+@media  screen and (min-width: 320px) and (max-width: 575px) {
+		.welcome__title{
+			font-size: 30px;
+		}
+		.close{
+			top:0;
+		}
+		.popup__content{
+			min-height: 325px;
+		}
+		.popup__list{
+			min-height: 250px;
+		}
+		.popup__link{
+			font-size: 45px;
+		}
+		.popup__list:after{
+			display: none;
+		}
+}
