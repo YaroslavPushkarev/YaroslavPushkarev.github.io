@@ -32,34 +32,36 @@ let playList = [
      song:"ENTER SANDMAN"
 
     }
-    
-    ];
+];
+
+var div = document.getElementById('list');
+
+var ol = document.createElement('ol');
+div.appendChild(ol);
+
+for (var i = 0, ln = playList.length; i < ln; i++) {
+
+    let li = document.createElement('li');
+    let p = document.createElement('p');
+
+    li.innerHTML = playList[i]['author'];
+    p.innerHTML = playList[i]['song'];
+
+    ol.appendChild(li);
+    ol.appendChild(p);
+}
 
 
+let modal = document.getElementById('myModal');
+let btn = document.getElementById('myBtn');
+let close = document.getElementById("closeBtn");
 
-    var div = document.getElementById('list');
+btn.onclick = function () {
+    modal.style.display = "block";
+}
 
-    var ul = document.createElement('ol');
-   
-     
-   
-    div.appendChild(ul);
-  
-     
-   
-    var data = ["Первая строка", "Вторая строка", "n строка"];
-   
-     
-   
-    playList.forEach(function(item)) {
-   
-      var li = document.createElement('li');
-   
-      li.innerHTML = playList[i];
-   
-      ul.appendChild(li);
-    }
-    
+close.onclick = function() {
+    modal.style.display = "none";
+}
 
-    playList.forEach(function(item)){
-    }
+
