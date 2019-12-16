@@ -29,14 +29,21 @@
 	width: 100%;
 	max-width: 330px;
 	font-size: 16px;
-	line-height: 35px;
+	line-height: 30px;
 	color: #5a5a5a;
 	font-family: $main-font;
 	font-weight: 400;
 	text-align: center;
 }
-@media  screen and (min-width: 360px) and (max-width: 675px) {
+@media  screen and (min-width: 320px) and (max-width: 675px) {
+	.expert{
+		padding: 20px 0;
+	}
 	.expert__list{
 		justify-content: center;
+		line-height: 3;
+	}
+	.expert__info{
+		padding: 10px 0;
 	}
 }

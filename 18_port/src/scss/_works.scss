@@ -30,8 +30,14 @@
 	}
 }
 
-@media  screen and (min-width: 350px) and (max-width: 710px) {
+@media  screen and (min-width: 320px) and (max-width: 710px) {
+    .works{
+    padding:20px 0;
+    }
     .works__list{
             justify-content: center;
+    }
+    .works__link > img{
+        height: 95%;
     }
 }
