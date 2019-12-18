@@ -34,9 +34,9 @@ let playList = [
     }
 ];
 
-var div = document.getElementById('list');
+let div = document.getElementById('list');
 
-var ol = document.createElement('ol');
+let ol = document.createElement('ol');
 div.appendChild(ol);
 
 for (var i = 0, ln = playList.length; i < ln; i++) {
@@ -62,6 +62,8 @@ btn.onclick = function () {
 close.onclick = function() {
     modal.style.display = "none";
 }
+
+
 
 document.getElementById('redButton').onclick = illuminateRed;
 document.getElementById('yellowButton').onclick = illuminateYellow;
