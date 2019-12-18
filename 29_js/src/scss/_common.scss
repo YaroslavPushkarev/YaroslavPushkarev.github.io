@@ -21,14 +21,16 @@
 }  
 .wrap{
 	display: flex;
+	justify-content: space-between;
 	padding: 20px;
+	width: 100%;
+	max-width: 400px;
 }
 .control-panel{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items:center;
-	padding-right:20px;
 }
   .button {
 	background-color: gray;
@@ -53,7 +55,7 @@
 	padding: 20px;
   }
   
-  .bulb {
+  .cirle {
 	height: 150px;
 	width: 150px;
 	background-color: #111;

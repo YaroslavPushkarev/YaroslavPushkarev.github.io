@@ -63,36 +63,29 @@ close.onclick = function() {
     modal.style.display = "none";
 }
 
-let traffic = document.getElementById("lightsBtn");
-let red = document.getElementById("red")
-let green = document.getElementById("green")
-let yellow = document.getElementById("yellow")
-
-
-
-document.getElementById('stopButton').onclick = illuminateRed;
-document.getElementById('slowButton').onclick = illuminateYellow;
-document.getElementById('goButton').onclick = illuminateGreen;
+document.getElementById('redButton').onclick = illuminateRed;
+document.getElementById('yellowButton').onclick = illuminateYellow;
+document.getElementById('greenButton').onclick = illuminateGreen;
 
 function illuminateRed() {
   clearLights();
-  document.getElementById('stopLight').style.backgroundColor = "red";
+  document.getElementById('redLight').style.backgroundColor = "red";
 
 }
 function illuminateYellow() {
   clearLights();
-  document.getElementById('slowLight').style.backgroundColor = "yellow";
+  document.getElementById('yellowLight').style.backgroundColor = "yellow";
 
 }
 function illuminateGreen() {
   clearLights();
-  document.getElementById('goLight').style.backgroundColor = "green";
+  document.getElementById('greenLight').style.backgroundColor = "green";
 
 }
   
 function clearLights() {
-  document.getElementById('stopLight').style.backgroundColor = "black";
-  document.getElementById('slowLight').style.backgroundColor = "black";
-  document.getElementById('goLight').style.backgroundColor = "black";
+  document.getElementById('redLight').style.backgroundColor = "black";
+  document.getElementById('yellowLight').style.backgroundColor = "black";
+  document.getElementById('greenLight').style.backgroundColor = "black";
 }
 
