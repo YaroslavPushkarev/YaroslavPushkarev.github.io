@@ -9,21 +9,23 @@
 </head>
 <body>
 	<div id="list"></div>
-	<button id="myBtn">Открыть</button>
+	<button id="myBtn">открыть модальное окно</button>
 	<div id="myModal" class="modal">
 		<div class="modal__inner">
 			<button id="closeBtn">Закрыть</button>
 		</div>
 	</div>
-
-	<div class="lights">
-		<div class="red">
-		</div>
-		<div class="yellow">
-		</div>
-		<div class="green">
-		</div>
-		<button class="lightsBtn">Переключить светофор</button>
+    <div class="wrap">
+	<div class="control-panel">
+		<h2 id="stopButton" class="button">Red</h2>
+		<h2 id="slowButton" class="button">Yellow</h2>
+		<h2 id="goButton" class="button">Green</h2>
+	  </div>
+	  <div class="traffic-lights">
+		<div id="stopLight" class="bulb"></div>
+		<div id="slowLight" class="bulb"></div>
+		<div id="goLight" class="bulb"></div>
+	  </div>
 	</div>
 
 

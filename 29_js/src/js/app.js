@@ -40,7 +40,6 @@ var ol = document.createElement('ol');
 div.appendChild(ol);
 
 for (var i = 0, ln = playList.length; i < ln; i++) {
-
     let li = document.createElement('li');
     let p = document.createElement('p');
 
@@ -64,4 +63,36 @@ close.onclick = function() {
     modal.style.display = "none";
 }
 
+let traffic = document.getElementById("lightsBtn");
+let red = document.getElementById("red")
+let green = document.getElementById("green")
+let yellow = document.getElementById("yellow")
+
+
+
+document.getElementById('stopButton').onclick = illuminateRed;
+document.getElementById('slowButton').onclick = illuminateYellow;
+document.getElementById('goButton').onclick = illuminateGreen;
+
+function illuminateRed() {
+  clearLights();
+  document.getElementById('stopLight').style.backgroundColor = "red";
+
+}
+function illuminateYellow() {
+  clearLights();
+  document.getElementById('slowLight').style.backgroundColor = "yellow";
+
+}
+function illuminateGreen() {
+  clearLights();
+  document.getElementById('goLight').style.backgroundColor = "green";
+
+}
+  
+function clearLights() {
+  document.getElementById('stopLight').style.backgroundColor = "black";
+  document.getElementById('slowLight').style.backgroundColor = "black";
+  document.getElementById('goLight').style.backgroundColor = "black";
+}
 

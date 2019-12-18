@@ -1,5 +1,5 @@
 .modal{
-    display: none;
+	display: none;
     position: fixed;
     z-index:1;
     left: 0;
@@ -10,37 +10,56 @@
     background-color: rgba(0,0,0,0.8);
 
 	&__inner{
-	width: 20%;
-	margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		padding: 30px;
+		width: 100%;
+		max-width: 200px;
+		background:#fff;
+		margin: 0 auto;
 	}
+}  
+.wrap{
+	display: flex;
+	padding: 20px;
 }
-.lights{
-	padding: 50px 0;
+.control-panel{
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
+	align-items:center;
+	padding-right:20px;
 }
-.lightsBtn{
+  .button {
+	background-color: gray;
+	color: white;
+	border-radius: 10px;
+	padding: 20px;
+	text-align: center;
+	cursor: pointer;
 	width: 100px;
-}
-.red{
-		background: red;
-		height: 100px;
-		width: 100px;
-		border-radius: 50%;
-}
+  }
+  
+  .traffic-lights {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 550px;
+	max-width: 200px;
+	float: left;
+	background-color: #333;
+	border-radius: 40px;
+	padding: 20px;
+  }
+  
+  .bulb {
+	height: 150px;
+	width: 150px;
+	background-color: #111;
+	border-radius: 50%;
+	transition: background 500ms;
+  }
 
-.yellow{
-		background: black;
-		height: 100px;
-		width: 100px;
-		border-radius: 50%;
-}
-
-.green{
-		background: black;
-		height: 100px;
-		width: 100px;
-		border-radius: 50%;
-}
 
 
