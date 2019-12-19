@@ -47,3 +47,15 @@
 		padding: 10px 0;
 	}
 }
+@media  screen and (min-width: 676px) and (max-width: 767px){
+	.expert__info{
+		padding: 10px 0;
+		max-width: 315px;
+	}
+	.expert__list{
+		line-height:3;
+	}
+	.info-text{
+		line-height: 2;
+	}
+}

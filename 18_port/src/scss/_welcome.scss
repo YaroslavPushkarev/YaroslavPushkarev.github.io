@@ -39,6 +39,7 @@
 	}
 }
 .burger{
+	display: block;
 	align-self: flex-end;
 	width: 25px;
 	height: 3px;
@@ -58,7 +59,7 @@
 	text-transform: uppercase;
 	color: $blue;
 }
-.overlay {
+#overlay {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -72,12 +73,8 @@
   text-align: center;
   visibility: hidden;
   opacity: 0;
+  z-index: 1;
 }
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-
 .popup {
   background: $white;
   border-radius: 10px;
@@ -142,6 +139,8 @@
   font-weight: bold;
   text-decoration: none;
   color: #333;
+  background: #fff;
+  border: none;
 }
 .close:hover {
   color: #06D85F;
