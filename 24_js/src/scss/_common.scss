@@ -1,0 +1,29 @@
+          *{
+            box-sizing: border-box;
+          }
+          body {
+            font-family: Arial;
+            font-size: 16px;
+            line-height: 1.2em;
+          }
+          .paragraf1 {
+           color:red;
+          }
+          .border {
+            display: inline-block;
+            border-width: 2px;
+            border-style: solid;
+            border-color: blue;
+            background:yellow;
+      
+          }
+          .paragraf2{
+              text-align: right;
+              color:green;
+              margin: 0;
+
+          }
+          .paragraf3 {
+           text-transform:uppercase;
+           text-decoration:underline;
+          }
