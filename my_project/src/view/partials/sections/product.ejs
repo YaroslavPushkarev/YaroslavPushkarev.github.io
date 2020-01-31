@@ -1,0 +1,73 @@
+<!-- <% const product = [
+{
+	photo:"https://placeimg.com/200/200/any",
+	cost:'1000грн'
+},
+{
+	photo:"https://placeimg.com/200/200/any",
+	cost:'1100грн'
+},
+{
+	photo:"https://placeimg.com/200/200/any",
+	cost:'1200грн'
+},
+{
+	photo:"https://placeimg.com/200/200/any",
+	cost:'1300грн'
+},
+{
+	photo:"https://placeimg.com/200/200/any",
+	cost:'1400грн'
+},
+{
+	photo:"https://placeimg.com/200/200/any",
+	cost:'1600грн'
+}
+] %>
+
+<section>
+	<div class="container">
+		<div class="row">
+			<% product.forEach(item => { %>
+			<div class="col-3">
+				<div class="card">
+					<img src="<%= item.photo %>" alt="">
+					<p><%= item.cost %></p>
+				</div>
+			</div>
+			<%})%>
+		</div>
+	</div>
+</section> -->
+
+<button id="sort-asc">Цена возрастание</button>
+<button id="sort-desc">Цена убывание</button>
+<button id="sort-rating">Рейтинг</button>
+
+
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="goods-wrap">
+					<div class="goods-card" data-price="1200" data-rating="3">
+						<img src="https://placeimg.com/200/200/any" alt="">
+						<p>1200 грн</p>
+					</div>
+					<div class="goods-card" data-price="1100" data-rating="1">
+						<img src="https://placeimg.com/200/200/any" alt="">
+						<p>1100 грн</p>
+					</div>
+					<div class="goods-card" data-price="1300" data-rating="3">
+						<img src="https://placeimg.com/200/200/any" alt="">
+						<p>1300 грн</p>
+					</div>
+						<div class="goods-card" data-price="900" data-rating="3">
+						<img src="https://placeimg.com/200/200/any" alt="">
+						<p>900 грн</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> 
