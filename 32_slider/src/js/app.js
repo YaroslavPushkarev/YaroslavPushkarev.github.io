@@ -26,3 +26,16 @@ $(document).ready(function(){
    })
 });
 
+  function initMap() {
+      const beetroot = {lat: 49.066589, lng: 33.413636};
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: beetroot,
+        zoom: 18,
+        styles: mapStyles
+      });
+      var marker = new google.maps.Marker({
+        position: beetroot,
+        map: map,
+        icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/parking_lot_maps.png'
+      });
+    }
