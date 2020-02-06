@@ -5,6 +5,32 @@
 .goods-card{
 	transition: 1s;
 }
-button{
-	margin-bottom: 20px;
+
+.product{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&-card{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: rgba(250,227,217,.2);
+		width: 100%;
+		height: 300px;
+		border-radius: 5px;
+	}
+
+}
+p{
+	text-align: center; 
+	color: rrgba(244,240,230,1);
+	font-size: 20px;
+	font-family: $main-font;
+}
+.button_product{
+	border: transparent;
+	font-family: $main-font;
 }

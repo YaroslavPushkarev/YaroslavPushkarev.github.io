@@ -1,9 +1,16 @@
-$(document).ready(function() {
-	$(".menu-icon").on("click", function(){
-		$("nav ul").toggleClass("showing");
-	});
+//nav
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+const links = document.querySelectorAll('.nav-links li');
+
+hamburger.addEventListener('click', () => {
+		navLinks.classList.toggle('open');
+		links.forEach(link => {
+			link.classList.toggle('fade');
+		});
 });
 
+//vegas-bg
 $("body").vegas({
 	delay: 4000,
     transition: 'zoomOut',
@@ -17,29 +24,30 @@ $("body").vegas({
      cover:true
 });
 
+//preloader
 document.body.onload = function(){
 	setTimeout(function(){
 		let preloader = document.getElementById('page-preloader');
 		if(!preloader.classList.contains('done')){
 			preloader.classList.add('done');
 		}
-	},2000);
+	},100);
 }
 
 //product
 
-document.querySelector('button#sort-asc').onclick = function () {
+document.querySelector('#sort-asc').onclick = function () {
     sortList('data-price');
 }
-document.querySelector('button#sort-desc').onclick = function () {
+document.querySelector('#sort-desc').onclick = function () {
     sortListDesc('data-price');
 }
-document.querySelector('button#sort-rating').onclick = function () {
+document.querySelector('#sort-rating').onclick = function () {
     sortListDesc('data-rating');
 }
 
 function sortList(sortType) {
-    let items = document.querySelector('.goods-wrap');
+    let items = document.querySelector('.product__wrap');
     for (let i = 0; i < items.children.length - 1; i++) {
         for (let j = i; j < items.children.length; j++) {
             if (+items.children[i].getAttribute(sortType) > +items.children[j].getAttribute(sortType)) {
@@ -52,7 +60,7 @@ function sortList(sortType) {
 }
 
 function sortListDesc(sortType) {
-    let items = document.querySelector('.goods-wrap');
+    let items = document.querySelector('.product__wrap');
     for (let i = 0; i < items.children.length - 1; i++) {
         for (let j = i; j < items.children.length; j++) {
             if (+items.children[i].getAttribute(sortType) < +items.children[j].getAttribute(sortType)) {

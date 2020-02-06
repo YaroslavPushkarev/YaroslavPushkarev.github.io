@@ -1,26 +1,30 @@
 <% const menu = ['Home', 'About', 'Portfolio', 'Testimonials', 'Contacts'] %>
 
-<div id="page-preloader" class="preloader">
-	<div class="loader">
-	</div>
-</div>
-
-<section class="header">
-	<div class="container">
-
-		<nav>
-			<div class="menu-icon">
-				<i class="fas fa-bars fa-2x"></i>
-			</div>
-			<img class="logo" src="./img/logo.svg" alt="" height="80" width="200">
-			<div class="menu">
-				<ul>
-					<% menu.forEach(item => { %>
-					<li><a class="header__social animated flipInX" href="#"><%= item %></a></li>
-					<%})%>
-				</ul>
-			</div>
-		</nav>
-	</div>
-</section>
-
+<nav class="nav">
+	<a href=""><img class="logo" src="./img/logo.svg" alt="" height="80" width="200"></a>
+		<div class="hamburger">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+		<ul class="nav-links">
+			<li>
+				<a href="">about</a>
+			</li>
+			<li>
+				<a href="">contact</a>
+			</li>
+			<li>
+				<a href="">project</a>
+			</li>
+			<li>
+				<a href=""><i class="fab fa-facebook-f"></i></a>
+			</li>
+			<li>
+				<a href=""><i class="fab fa-instagram"></i></a>
+			</li>
+			<li>
+				<a href=""><i class="fab fa-twitter"></i></i></a>
+			</li>
+		</ul>
+</nav>

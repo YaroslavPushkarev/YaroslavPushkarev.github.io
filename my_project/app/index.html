@@ -14,124 +14,130 @@
   
 
 
+ <div id="page-preloader" class="preloader">
+ 	<div class="loader">
+ 	</div>
+ </div>
 
 
-<div id="page-preloader" class="preloader">
-	<div class="loader">
-	</div>
-</div>
-
+<nav class="nav">
+	<a href=""><img class="logo" src="./img/logo.svg" alt="" height="80" width="200"></a>
+		<div class="hamburger">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+		<ul class="nav-links">
+			<li>
+				<a href="">about</a>
+			</li>
+			<li>
+				<a href="">contact</a>
+			</li>
+			<li>
+				<a href="">project</a>
+			</li>
+			<li>
+				<a href=""><i class="fab fa-facebook-f"></i></a>
+			</li>
+			<li>
+				<a href=""><i class="fab fa-instagram"></i></a>
+			</li>
+			<li>
+				<a href=""><i class="fab fa-twitter"></i></i></a>
+			</li>
+		</ul>
+</nav>
 <section class="header">
 	<div class="container">
-
-		<nav>
-			<div class="menu-icon">
-				<i class="fas fa-bars fa-2x"></i>
+		<div class="row justify-content-center">
+			<div class="col-7 d-flex justify-content-center">
+				<h1 class="header__text">the official vans shop</h1>
 			</div>
-			<img class="logo" src="./img/logo.svg" alt="" height="80" width="200">
-			<div class="menu">
-				<ul>
-					
-					<li><a class="header__social animated flipInX" href="#">Home</a></li>
-					
-					<li><a class="header__social animated flipInX" href="#">About</a></li>
-					
-					<li><a class="header__social animated flipInX" href="#">Portfolio</a></li>
-					
-					<li><a class="header__social animated flipInX" href="#">Testimonials</a></li>
-					
-					<li><a class="header__social animated flipInX" href="#">Contacts</a></li>
-					
-				</ul>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-7 d-flex justify-content-center">
+				<a href="#product" class="button">shop now</a>
 			</div>
-		</nav>
+		</div>
 	</div>
 </section>
 
 
-<!-- 
 
-<section>
+
+<section id="product" class="product">
 	<div class="container">
-		<div class="row">
+		<div class="row justify-content-center">
+			<div class="col-8 d-flex justify-content-between align-items-center">
+				<button class=" button button_product" id="sort-asc">Цена возрастание</button>
+				<button  class="button button_product" id="sort-desc">Цена убывание</button>
+				<button  class="button button_product" id="sort-rating">Sort rating</button>
+			</div>
+		</div>
+		<div class="row product__wrap">
 			
-			<div class="col-3">
-				<div class="card">
-					<img src="https://placeimg.com/200/200/any" alt="">
-					<p>1000грн</p>
+			<div class="col py-2"  data-price="2500" data-rating="2">
+				<div class="product-card" >
+					<a href="# "><img src="https://placeimg.com/200/200/any" alt="photo"></a>
+					<p>2500 грн</p>
 				</div>
 			</div>
 			
-			<div class="col-3">
-				<div class="card">
-					<img src="https://placeimg.com/200/200/any" alt="">
-					<p>1100грн</p>
+			<div class="col py-2"  data-price="1100" data-rating="3">
+				<div class="product-card" >
+					<a href="# "><img src="https://placeimg.com/200/200/any" alt="photo"></a>
+					<p>1100 грн</p>
 				</div>
 			</div>
 			
-			<div class="col-3">
-				<div class="card">
-					<img src="https://placeimg.com/200/200/any" alt="">
-					<p>1200грн</p>
+			<div class="col py-2"  data-price="1200" data-rating="2">
+				<div class="product-card" >
+					<a href="# "><img src="https://placeimg.com/200/200/any" alt="photo"></a>
+					<p>1200 грн</p>
 				</div>
 			</div>
 			
-			<div class="col-3">
-				<div class="card">
-					<img src="https://placeimg.com/200/200/any" alt="">
-					<p>1300грн</p>
+			<div class="col py-2"  data-price="2100" data-rating="1">
+				<div class="product-card" >
+					<a href="# "><img src="https://placeimg.com/200/200/any" alt="photo"></a>
+					<p>2100 грн</p>
 				</div>
 			</div>
 			
-			<div class="col-3">
-				<div class="card">
-					<img src="https://placeimg.com/200/200/any" alt="">
-					<p>1400грн</p>
+			<div class="col py-2"  data-price="2100" data-rating="1">
+				<div class="product-card" >
+					<a href="# "><img src="https://placeimg.com/200/200/any" alt="photo"></a>
+					<p>2100 грн</p>
 				</div>
 			</div>
 			
-			<div class="col-3">
-				<div class="card">
-					<img src="https://placeimg.com/200/200/any" alt="">
-					<p>1600грн</p>
+			<div class="col py-2"  data-price="2100" data-rating="1">
+				<div class="product-card" >
+					<a href="# "><img src="https://placeimg.com/200/200/any" alt="photo"></a>
+					<p>2100 грн</p>
+				</div>
+			</div>
+			
+			<div class="col py-2"  data-price="2100" data-rating="1">
+				<div class="product-card" >
+					<a href="# "><img src="https://placeimg.com/200/200/any" alt="photo"></a>
+					<p>2100 грн</p>
+				</div>
+			</div>
+			
+			<div class="col py-2"  data-price="2100" data-rating="1">
+				<div class="product-card" >
+					<a href="# "><img src="https://placeimg.com/200/200/any" alt="photo"></a>
+					<p>2100 грн</p>
 				</div>
 			</div>
 			
 		</div>
 	</div>
-</section> -->
-
-<button id="sort-asc">Цена возрастание</button>
-<button id="sort-desc">Цена убывание</button>
-<button id="sort-rating">Рейтинг</button>
+</section>
 
 
-<section>
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<div class="goods-wrap">
-					<div class="goods-card" data-price="1200" data-rating="3">
-						<img src="https://placeimg.com/200/200/any" alt="">
-						<p>1200 грн</p>
-					</div>
-					<div class="goods-card" data-price="1100" data-rating="1">
-						<img src="https://placeimg.com/200/200/any" alt="">
-						<p>1100 грн</p>
-					</div>
-					<div class="goods-card" data-price="1300" data-rating="3">
-						<img src="https://placeimg.com/200/200/any" alt="">
-						<p>1300 грн</p>
-					</div>
-						<div class="goods-card" data-price="900" data-rating="3">
-						<img src="https://placeimg.com/200/200/any" alt="">
-						<p>900 грн</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section> 
 
 
 

@@ -1,73 +1,76 @@
-<!-- <% const product = [
+<% const product = [
 {
 	photo:"https://placeimg.com/200/200/any",
-	cost:'1000грн'
+	cost:'2500 грн',
+	price:'2500',
+	rating:'2'
 },
 {
 	photo:"https://placeimg.com/200/200/any",
-	cost:'1100грн'
+	cost:'1100 грн',
+	price:'1100',
+	rating:'3'
 },
 {
 	photo:"https://placeimg.com/200/200/any",
-	cost:'1200грн'
+	cost:'1200 грн',
+	price:'1200',
+	rating:'2'
 },
 {
 	photo:"https://placeimg.com/200/200/any",
-	cost:'1300грн'
+	cost:'2100 грн',
+	price:'2100',
+	rating:'1'
 },
 {
 	photo:"https://placeimg.com/200/200/any",
-	cost:'1400грн'
+	cost:'2100 грн',
+	price:'2100',
+	rating:'1'
 },
 {
 	photo:"https://placeimg.com/200/200/any",
-	cost:'1600грн'
+	cost:'2100 грн',
+	price:'2100',
+	rating:'1'
+},
+{
+	photo:"https://placeimg.com/200/200/any",
+	cost:'2100 грн',
+	price:'2100',
+	rating:'1'
+},
+{
+	photo:"https://placeimg.com/200/200/any",
+	cost:'2100 грн',
+	price:'2100',
+	rating:'1'
 }
 ] %>
 
-<section>
+
+
+<section id="product" class="product">
 	<div class="container">
-		<div class="row">
+		<div class="row justify-content-center">
+			<div class="col-8 d-flex justify-content-between align-items-center">
+				<button class=" button button_product" id="sort-asc">Цена возрастание</button>
+				<button  class="button button_product" id="sort-desc">Цена убывание</button>
+				<button  class="button button_product" id="sort-rating">Sort rating</button>
+			</div>
+		</div>
+		<div class="row product__wrap">
 			<% product.forEach(item => { %>
-			<div class="col-3">
-				<div class="card">
-					<img src="<%= item.photo %>" alt="">
+			<div class="col py-2"  data-price="<%= item.price %>" data-rating="<%= item.rating%>">
+				<div class="product-card" >
+					<a href="# "><img src="<%= item.photo %>" alt="photo"></a>
 					<p><%= item.cost %></p>
 				</div>
 			</div>
 			<%})%>
 		</div>
 	</div>
-</section> -->
-
-<button id="sort-asc">Цена возрастание</button>
-<button id="sort-desc">Цена убывание</button>
-<button id="sort-rating">Рейтинг</button>
+</section>
 
 
-<section>
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<div class="goods-wrap">
-					<div class="goods-card" data-price="1200" data-rating="3">
-						<img src="https://placeimg.com/200/200/any" alt="">
-						<p>1200 грн</p>
-					</div>
-					<div class="goods-card" data-price="1100" data-rating="1">
-						<img src="https://placeimg.com/200/200/any" alt="">
-						<p>1100 грн</p>
-					</div>
-					<div class="goods-card" data-price="1300" data-rating="3">
-						<img src="https://placeimg.com/200/200/any" alt="">
-						<p>1300 грн</p>
-					</div>
-						<div class="goods-card" data-price="900" data-rating="3">
-						<img src="https://placeimg.com/200/200/any" alt="">
-						<p>900 грн</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section> 

@@ -1,4 +1,15 @@
 @import "vars";
 @import "mixins";
 @import "common";
+
+@import "nav";
+@import "header";
 @import "product";
+@import "preloader";
+
+// .product,
+// .header,
+// .nav
+// {
+// 	display: none;
+// }
