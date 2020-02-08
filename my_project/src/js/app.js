@@ -10,6 +10,19 @@ hamburger.addEventListener('click', () => {
 		});
 });
 
+
+//scrool
+$(window).on("scroll", function(){
+   if($(window).scrollTop()){
+     $('nav').addClass('grey');
+   }
+   else{
+    $('nav').removeClass('grey');
+   }
+})
+
+
+
 //vegas-bg
 $("body").vegas({
 	delay: 4000,
@@ -31,7 +44,7 @@ document.body.onload = function(){
 		if(!preloader.classList.contains('done')){
 			preloader.classList.add('done');
 		}
-	},100);
+	},2000);
 }
 
 //product
@@ -76,3 +89,75 @@ function sortListDesc(sortType) {
 function insertAfter(elem, refElem) {
     return refElem.parentNode.insertBefore(elem, refElem.nextSibling);
 }
+
+//carousel
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+        items:3,
+      lazyLoad: true,
+      autoplay:true,
+      autoplayTimeout:1500,
+      autoplayHoverPause:true,
+        center:true,
+        loop:true,
+      margin:20,
+      nav:true,
+      navText: ['<i class="fas fa-chevron-circle-left"></i>','<i class="fas fa-chevron-circle-right"></i>'],
+        autoHeight:true,
+      smartSpeed:1150,
+        responsive:{
+          320:{
+            items:1
+          },
+            600:{
+            items:3
+            }
+        }
+   })
+});
+
+
+//fetch
+
+document.getElementById('list').addEventListener('click',fetchUserData);
+
+function fetchUserData(){
+
+fetch('https://jsonplaceholder.typicode.com/users')
+  .then(response => response.json())
+  .then(users =>{
+    let output =  '<h2>List of Users</h2>';
+    output += '<ul>';
+    users.forEach(function(user)
+    {
+        output += `
+        <li>
+            ${user.name}
+        </li>
+        `;
+    });
+    output += '</ul>';
+    document.getElementById("response").innerHTML = output;
+  });
+}
+
+
+//buttot top
+
+$(document).ready(function() {
+
+  let btn = $('#button');
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+  });
+});
