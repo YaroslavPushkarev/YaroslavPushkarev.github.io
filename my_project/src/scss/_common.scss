@@ -13,6 +13,7 @@ a{
 
 html{
 	scroll-behavior: smooth;
+	color: white;
 }
 
 
@@ -20,10 +21,21 @@ html{
     background: rgba(34,40,49,1);
     opacity: .8;
 }
-
+.btn {
+	 background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
 #button {
   display: inline-block;
-  background-color: #FF9800;
+  background-color: green;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -48,12 +60,14 @@ html{
 }
 #button:hover {
   cursor: pointer;
-  background-color: #333;
+  background-color: green;
 }
 #button:active {
-  background-color: #555;
+  background-color: green;
 }
 #button.show {
   opacity: 1;
   visibility: visible;
 }
+
+

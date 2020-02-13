@@ -1,79 +1,105 @@
 <% const product = [
 {
-	photo:"https://placeimg.com/200/200/any",
-	cost:'2500 грн',
+	photo:"/img/product/vans.png",
+	cost:'2500 $',
 	price:'2500',
 	rating:'2'
 },
 {
-	photo:"https://placeimg.com/200/200/any",
-	cost:'1100 грн',
+	photo:"/img/product/vans1.png",
+	cost:'1100 $',
 	price:'1100',
 	rating:'3'
 },
 {
-	photo:"https://placeimg.com/200/200/any",
-	cost:'1200 грн',
+	photo:"/img/product/vans2.png",
+	cost:'1200 $',
 	price:'1200',
 	rating:'2'
 },
 {
-	photo:"https://placeimg.com/200/200/any",
-	cost:'2100 грн',
+	photo:"/img/product/vans3.png",
+	cost:'2100 $',
 	price:'2100',
 	rating:'1'
 },
 {
-	photo:"https://placeimg.com/200/200/any",
-	cost:'2100 грн',
+	photo:"/img/product/vans4.png",
+	cost:'2100 $',
 	price:'2100',
 	rating:'1'
 },
 {
-	photo:"https://placeimg.com/200/200/any",
-	cost:'2100 грн',
+	photo:"/img/product/vans5.png",
+	cost:'2100 $',
 	price:'2100',
 	rating:'1'
 },
 {
-	photo:"https://placeimg.com/200/200/any",
-	cost:'2100 грн',
+	photo:"/img/product/vans6.png",
+	cost:'2100 $',
 	price:'2100',
 	rating:'1'
 },
 {
-	photo:"https://placeimg.com/200/200/any",
-	cost:'2100 грн',
+	photo:"/img/product/vans7.png",
+	cost:'2100 $',
 	price:'2100',
 	rating:'1'
 }
 ] %>
 
 
-<button id="list">Fetch</button>
+<!-- <button id="list">Fetch</button> -->
 
 <div id=response></div>
 
+
 <section id="product" class="product">
-	<div class="container">
+	<div class="wrap">
 		<div class="row justify-content-center">
-			<div class="col-8 d-flex justify-content-between align-items-center">
+			<div class="col-3">
+				<h2>Cart</h2>
+				<div class="cart-row">
+					<ul class="cart-names">
+						<li class="names-item">item</li>
+						<li class="names-item">price</li>
+						<li class="names-item">quantity</li>
+					</ul>
+				</div>
+				<hr>
+				<div class="cart-items">
+				</div>
+				<div class="cart-total">
+					<strong class="cart-total-title">Total</strong>
+					<span class="cart-total-price">$0</span>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-4">
+						<button class="btn btn-primary btn-purchase" type="button">purchase</button>
+					</div>
+				</div>
 				<button class=" button button_product" id="sort-asc">Цена возрастание</button>
 				<button  class="button button_product" id="sort-desc">Цена убывание</button>
-				<button  class="button button_product" id="sort-rating">Sort rating</button>
+				<button  class=" button button_product" id="sort-rating">Sort rating</button>
 			</div>
-		</div>
-		<div class="row product__wrap">
-			<% product.forEach(item => { %>
-			<div class="col py-2"  data-price="<%= item.price %>" data-rating="<%= item.rating%>">
-				<div class="product-card" >
-					<a href="# "><img src="<%= item.photo %>" alt="photo"></a>
-					<p><%= item.cost %></p>
+
+			<div class="col-9">
+				<div class="row product__wrap">
+					<% product.forEach(item => { %>
+					<div class="col-3 py-2"  data-price="<%= item.price %>" data-rating="<%= item.rating%>">
+						<div class="product-card" >
+							<a class="product__item"  href="# "><img class="shop-img" src="<%= item.photo %>" alt="photo"></a>
+							<p class="cart-price"><%= item.cost %></p>
+							<button class="btn btn-primary shop-item-button" type="button">add to cart</button>
+						</div>
+					</div>
+					<%})%>
 				</div>
 			</div>
-			<%})%>
 		</div>
 	</div>
 </section>
+
 
 
