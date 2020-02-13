@@ -30,11 +30,11 @@
 }
 
 .header__link{
-	border-right: 1px solid white; 
+	border-right: 1px solid white;
 	padding-right: 10px;
 }
 .header__link:last-child{
-	border-right: none; 
+	border-right: none;
 	padding-right: 0;
 }
 
@@ -49,6 +49,8 @@
 	width: 100%;
 	max-width: 500px;
 	background-color: #fff;
+	border-radius: 5px;
+	padding: 10px 20px;
 }
 .modal.active{
 	transform: translate(-50%,-50%) scale(1);
@@ -78,3 +80,11 @@
 	pointer-events: all;
 }
 
+.fetch__title{
+	text-align: center;
+	color: red;
+}
+.fetch__item{
+	text-align: center;
+	color:rgba(40,183,141,1);
+}

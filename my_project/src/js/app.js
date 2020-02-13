@@ -27,10 +27,9 @@ $("body").vegas({
 	delay: 4000,
     transition: 'zoomOut',
     slides: [
-        { src: "/img/bg.jpg" },
-        { src: "/img/bg1.jpg" },
-        { src: "/img/bg2.jpg" },
-        { src: "/img/bg3.jpg" },
+        { src: "./img/bg1.jpg" },
+        { src: "./img/bg2.jpg" },
+        { src: "./img/bg3.jpg" },
     ],
      overlay: true,
      cover:true
@@ -43,7 +42,7 @@ document.body.onload = function(){
 		if(!preloader.classList.contains('done')){
 			preloader.classList.add('done');
 		}
-	},100);
+	},2000);
 }
 
 //product
@@ -89,32 +88,6 @@ function insertAfter(elem, refElem) {
     return refElem.parentNode.insertBefore(elem, refElem.nextSibling);
 }
 
-//carousel
-$(document).ready(function(){
-  $(".owl-carousel").owlCarousel({
-        items:3,
-      lazyLoad: true,
-      autoplay:true,
-      autoplayTimeout:1500,
-      autoplayHoverPause:true,
-        center:true,
-        loop:true,
-      margin:20,
-      nav:true,
-      navText: ['<i class="fas fa-chevron-circle-left"></i>','<i class="fas fa-chevron-circle-right"></i>'],
-        autoHeight:true,
-      smartSpeed:1150,
-        responsive:{
-          320:{
-            items:1
-          },
-            600:{
-            items:3
-            }
-        }
-   })
-});
-
 
 //fetch
 
@@ -125,12 +98,13 @@ function fetchUserData(){
 fetch('https://jsonplaceholder.typicode.com/users')
   .then(response => response.json())
   .then(users =>{
-    let output =  '<h2>List of Users</h2>';
-    output += '<ul>';
+    let output =  '<h2 class="fetch__title">List of Users</h2>';
+    output += '<ul class="fetch-list">';
     users.forEach(function(user)
     {
         output += `
-        <li>
+
+        <li class="fetch__item">
            ${user.name}
         </li>
         `;

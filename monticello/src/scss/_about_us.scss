@@ -1,0 +1,102 @@
+.about{
+	background: url('../img/about-bg.png') no-repeat;
+	background-size: cover;
+
+	&__wrap{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+
+		height: 100vh;
+	}
+	&__navbar{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	background-color: rgba(116,111,249,.1)!important;
+	}
+	&__navbar-nav{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+ 	&__nav-link{
+	color: $white!important;
+	font-size: 14px;
+	font-family: $main-font;
+	text-transform: uppercase;
+	}
+	&__social{
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+	&__title{
+		font-size: 80px;
+	color: $white;
+	font-family: $main-font;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	}
+	&__text{
+	font-size: 18px;
+	letter-spacing: 5px;
+	color: $white;
+	font-family: $main-font;
+	text-align: center;
+	text-transform: uppercase;
+	}
+	&__arrow{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		border: 1px solid   $white;
+		height: 50px;
+		width: 50px;
+	}
+}
+.arrow__item{
+	display: block;
+			border-top: 1px solid $white;
+			border-left: 1px solid $white;
+			height: 15px;
+			width: 15px;
+			transform: rotate(-135deg);
+}
+.social__item{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	height: 40px;
+	width: 40px;
+	border: 1px solid $grey;
+	border-radius: 50%;
+}
+.fab{
+	color: $white;
+	text-align: center;
+}
+.owl-dots{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: absolute;
+	right: 0;
+	height: 200px;
+}
+.owl-dots .owl-dot{
+	background:rgba(187,222,214,.1) !important;
+	border: 1px solid rgba(5,68,92,1)!important;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+.owl-dots .owl-dot:last-child{
+	margin-right: 0;
+}
+.owl-dot.active{
+	 background: $white!important;
+}

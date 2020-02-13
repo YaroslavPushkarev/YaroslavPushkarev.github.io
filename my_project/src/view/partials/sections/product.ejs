@@ -1,64 +1,58 @@
 <% const product = [
 {
-	photo:"/img/product/vans.png",
-	cost:'2500 $',
-	price:'2500',
-	rating:'2'
+	photo:"img/product/vans.png",
+	cost:'120 $',
+	price:'120',
+	rating:'4'
 },
 {
-	photo:"/img/product/vans1.png",
-	cost:'1100 $',
-	price:'1100',
+	photo:"img/product/vans9.png",
+	cost:'140 $',
+	price:'140',
 	rating:'3'
 },
 {
-	photo:"/img/product/vans2.png",
-	cost:'1200 $',
-	price:'1200',
+	photo:"img/product/vans2.png",
+	cost:'123 $',
+	price:'123',
 	rating:'2'
 },
 {
-	photo:"/img/product/vans3.png",
-	cost:'2100 $',
-	price:'2100',
+	photo:"img/product/vans3.png",
+	cost:'105 $',
+	price:'105',
 	rating:'1'
 },
 {
-	photo:"/img/product/vans4.png",
-	cost:'2100 $',
-	price:'2100',
+	photo:"img/product/vans4.png",
+	cost:'110$',
+	price:'110',
 	rating:'1'
 },
 {
-	photo:"/img/product/vans5.png",
-	cost:'2100 $',
-	price:'2100',
+	photo:"img/product/vans5.png",
+	cost:'140 $',
+	price:'140',
 	rating:'1'
 },
 {
-	photo:"/img/product/vans6.png",
-	cost:'2100 $',
-	price:'2100',
+	photo:"img/product/vans6.png",
+	cost:'135 $',
+	price:'135',
 	rating:'1'
 },
 {
-	photo:"/img/product/vans7.png",
-	cost:'2100 $',
-	price:'2100',
+	photo:"img/product/vans7.png",
+	cost:'114 $',
+	price:'114',
 	rating:'1'
 }
 ] %>
 
-
-<!-- <button id="list">Fetch</button> -->
-
-<div id=response></div>
-
-
 <section id="product" class="product">
 	<div class="wrap">
 		<div class="row justify-content-center">
-			<div class="col-3">
+			<div class="col-12 col-md-6 col-lg-3">
 				<h2>Cart</h2>
 				<div class="cart-row">
 					<ul class="cart-names">
@@ -71,23 +65,30 @@
 				<div class="cart-items">
 				</div>
 				<div class="cart-total">
-					<strong class="cart-total-title">Total</strong>
-					<span class="cart-total-price">$0</span>
+					<strong class="cart-total-title">Total <span>&nbsp;</span></strong>
+					<span class="cart-total-price"> $0</span>
 				</div>
-				<div class="row justify-content-center">
-					<div class="col-4">
+				<div class="row justify-content-center py-2">
+					<div class="col-12 d-flex justify-content-center">
 						<button class="btn btn-primary btn-purchase" type="button">purchase</button>
 					</div>
 				</div>
-				<button class=" button button_product" id="sort-asc">Цена возрастание</button>
-				<button  class="button button_product" id="sort-desc">Цена убывание</button>
-				<button  class=" button button_product" id="sort-rating">Sort rating</button>
+				<div class="row">
+					<div class="col-12 col-md-10 py-2 d-flex  flex-column">
+						<div class="sort-product">
+							<h2 class="sort-title">Sort</h2>
+							<button class="button button_product btn" id="sort-asc">Price, low to high</button>
+							<button  class="button button_product btn" id="sort-desc">Price, high to low</button>
+							<button  class=" button button_product btn" id="sort-rating">Sort rating</button>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<div class="col-9">
 				<div class="row product__wrap">
 					<% product.forEach(item => { %>
-					<div class="col-3 py-2"  data-price="<%= item.price %>" data-rating="<%= item.rating%>">
+					<div class="col-12 col-md-6 col-lg-4 py-2"  data-price="<%= item.price %>" data-rating="<%= item.rating%>">
 						<div class="product-card" >
 							<a class="product__item"  href="# "><img class="shop-img" src="<%= item.photo %>" alt="photo"></a>
 							<p class="cart-price"><%= item.cost %></p>
