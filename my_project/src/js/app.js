@@ -27,9 +27,9 @@ $("body").vegas({
 	delay: 4000,
     transition: 'zoomOut',
     slides: [
-        { src: "/img/bg1.jpg" },
-        { src: "/img/bg2.jpg" },
-        { src: "/img/bg3.jpg" },
+        { src: "./img/bg1.jpg" },
+        { src: "./img/bg2.jpg" },
+        { src: "./img/bg3.jpg" },
     ],
      overlay: true,
      cover:true
