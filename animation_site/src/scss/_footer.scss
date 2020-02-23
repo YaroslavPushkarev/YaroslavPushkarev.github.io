@@ -1,0 +1,223 @@
+.footer{
+	padding: 7.9rem 0;
+	background-color: #121212;
+	color: #fff;
+	text-align: center;
+	position: relative;
+
+	&-content h4{
+		font-size: 1.9rem;
+		text-transform: uppercase;
+		font-weight: 100;
+		letter-spacing: 3px;
+		margin-bottom: 3rem;
+	}
+	&-content .asterisk{
+		margin: 2.4rem 0;
+	}
+	&__about{
+		margin-bottom: 5.4rem;
+	}
+	&__about p{
+		line-height: 2;
+	}
+}
+.social-icons{
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin-bottom: 5.4rem;
+
+}
+.social-icons i {
+	font-size: 2rem;
+	color: #fff;
+	padding: .8rem 2rem;
+	opacity: .5s;
+	transition:  color .5s;
+}
+.social-icons i:hover,
+.social-icons i:focus{
+	color:$second-color;
+}
+.newsletter__form{
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+.newsletter__input{
+	width: 100%;
+	max-width: 25rem;
+	padding: 1rem;
+	border-radius:.4rem;
+}
+.newsletter-btn{
+	background-color: transparent;
+	border: none;
+	color:$dark;
+	cursor: pointer;
+	font-size: 1.6rem;
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+
+	margin-left: 10.5rem;
+}
+
+
+
+.back-to-top{
+	width: 7rem;
+	height: 7rem;
+	background-color: #121212;
+	position: absolute;
+	top:-3rem;
+	left:50%;
+	transform: translateX(-50%);
+	border-radius: 50%;
+}
+.back-to-top i{
+	display: block;
+	color:#fff;
+	font-size: 2rem;
+	padding: 2rem;
+	animation: up 2s infinite;
+
+}
+.single-animation{
+	opacity: 0;
+	animation: fadeDown .5s forwards;
+	animation-delay: 1.5s,
+}
+@media screen and (min-width: 900px) {
+	.nav {
+		justify-content: space-between;
+	}
+
+	.nav-toggle{
+		display: none;
+	}
+
+	.nav__list{
+		position: initial;
+		width: initial;
+		height: initial;
+		background-color: transparent;
+		justify-content: initial;
+		flex-direction: row;
+		transform: initial;
+		transition: initial;
+	}
+	.nav__item{
+		margin: 0 2.4rem;
+		border: none;
+	}
+	.nav__item:last-child{
+ 		margin: 0;
+	}
+	.nav__link{
+		font-size: 1.3rem;
+	}
+	.restaurant{
+		padding: 50px 0;
+	}
+	.restaurant__info{
+		display: flex;
+		align-items: center;
+	}
+	.restaurant__info > div{
+		flex:1;
+	}
+	.footer__content{
+		width: 100%;
+		max-width: 77.5rem;
+		margin: auto;
+	}
+	.footer-content-about{
+			max-width: 55.3rem;
+			margin: 0 auto 5.4rem;
+	}
+	.footer__devider {
+		display: flex;
+		justify-content: space-between;
+	}
+	.social-media,
+	.newsletter-form
+	{
+		width: 100%;
+		max-width: 27.3rem;
+		margin: 0 1rem;
+	}
+	.social-icon i{
+		opacity: 1;
+	}
+	.newsletter-btn{
+		margin-left: 7.5rem;
+	}
+	.main__title{
+		margin-bottom: 10px;
+	}
+}
+
+
+@keyframes fadeUp{
+	0%{
+		transform: translateY(4rem);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes scale{
+	0%{
+		transform: scale(2);
+	}
+	100%{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes grow{
+	0%{
+		width: 0;
+	}
+	100%{
+		opacity: 1;
+	   width: 100%;
+	}
+}
+@keyframes spin{
+	0%{
+		transform:rotate(0);
+	}
+	100%{
+		opacity: 1;
+	   transform:rotate(-360deg);
+	}
+}
+@keyframes fadeDown{
+	0%{
+		transform: translateY(-4rem);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes up{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(-1rem);
+	}
+}
+

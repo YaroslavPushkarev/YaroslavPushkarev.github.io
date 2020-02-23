@@ -1,0 +1,20 @@
+<% const menu = ['home','menu','reservation','news','shop','contact'] %>
+<header>
+	<div class="container">
+		<nav class="nav">
+			<div class="nav-toggle">
+				<i class="fas fa-bars"></i>
+				<i class="fas fa-times"></i>
+			</div>
+			<a href="index.html" class="nav__logo">logo</a>
+			<ul class="nav__list">
+				<% menu.forEach(item => { %>
+				<li class="nav__item">
+					<a href="#" class="nav__link"><%= item %>
+					</a>
+				</li>
+				<%})%>
+			</ul>
+		</nav>
+	</div>
+</header>

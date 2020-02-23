@@ -1,0 +1,47 @@
+<% const menu = [
+{
+	social:'home',
+	id:'#home'
+},
+{
+	social:'about',
+	id:'#about'
+},
+{
+	social:'menu',
+	id:'#menu'
+},
+{
+	social:'chefs',
+	id:'#chefs'
+}
+] %>
+
+<header>
+	<div class="container">
+		<div class="hamburger-menu">
+			<i class="fas fa-bars toggle"></i>
+			<i class="fas fa-times toggle"></i>
+		</div>
+		<nav class="d-flex align-items-center justify-content-center justify-content-lg-between">
+			<a class="navbar-brand" href="index.html">
+				<img class="img-fluid" src="img/logo.png" alt="logo">
+			</a>
+			<ul class="nav-list text-center p-0">
+				<% menu.forEach(item => { %>
+				<li class="nav-item">
+					<a class="nav-link" href="<%= item.id %>">
+						<%= item.social %>
+					</a>
+				</li>
+				<%})%>
+			</ul>
+		</nav>
+		<div class="hero-text w-100 text-white px-2 px-sm-0">
+			<h1 class="display-4">welcome</h1>
+			<p class="lead mb-4">Baked goods like you've never seen before!</p>
+			<a class="btn px-5 mr-2" href="#">explore</a>
+			<a class="btn px-5 mr-2" href="#">find a store</a>
+		</div>
+	</div>
+</header>

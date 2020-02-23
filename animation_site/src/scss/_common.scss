@@ -1,0 +1,29 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+html{
+	font-family:$body-font;
+	font-size: 10px;
+	color:$body-color;
+	scroll-behavior:smooth;
+}
+
+img{
+	width: 100%;
+	max-width: 100%;
+}
+a{
+	text-decoration: none;
+}
+p{
+	font-size: 1.6rem;
+}
+section{
+	overflow:hidden;
+}
+

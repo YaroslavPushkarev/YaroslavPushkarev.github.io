@@ -1,0 +1,15 @@
+.menu{
+	padding:50px ;
+
+	&-info{
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		grid-gap:1.5rem;
+
+	}
+
+}
+.menu .restaurant__description{
+	padding-top: 6rem;
+	margin-bottom: 0;
+}

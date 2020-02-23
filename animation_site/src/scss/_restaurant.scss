@@ -1,0 +1,47 @@
+.global-headline{
+	text-align: center;
+}
+
+.title-dark{
+	color: $dark;
+	margin-bottom: 10px;
+	letter-spacing: .7rem;
+}
+.restaurant{
+ padding: 50px 0 ;
+
+ &__info{
+ 	text-align: center;
+ }
+ &__description{
+ 	margin-bottom: 10px;
+ 	& p{
+ 		line-height: 1.6;
+ 		margin-bottom: 2.4rem;
+ 	}
+ }
+}
+.body-btn{
+	font-size: 1.5rem;
+	color:$second-color;
+	position: relative;
+	transition: color .5s;
+}
+.body-btn::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom:-3px;
+	width: 100%;
+	height: 2px;
+	background-color:$second-color;
+}
+.body-btn:hover,
+.body-btn:focus{
+	color:$dark;
+}
+.body-btn:hover::before,
+.body-btn:focus::before{
+	background-color:  $dark;
+
+}
