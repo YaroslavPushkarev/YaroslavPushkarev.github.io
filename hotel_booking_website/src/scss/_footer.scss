@@ -33,3 +33,16 @@
 .sm-link i {
 	margin:auto;
 }
+@media screen and (min-width: 768px){
+		.footer-content{
+			display: flex;
+			justify-content: space-between;
+		}
+		.footer-content-brand{
+			margin-bottom: 0;
+			flex: 0 0 49%;
+		}
+		.paragraph{
+			margin-top: 2rem;
+		}
+}

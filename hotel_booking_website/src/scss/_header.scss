@@ -70,3 +70,32 @@
 .hamburger-menu .fa-times{
 	display: none;
 }
+
+@media screen and (min-width: 1000px){
+	.hamburger-menu{
+		display: none;
+	}
+	.nav-list{
+		position: initial;
+		width: initial;
+		height: initial;
+		background-color: transparent;
+		flex-direction: row;
+		justify-content: initial;
+		opacity: 1;
+		transform: scale(1);
+
+	}
+	.nav-item:not(last-child){
+			margin-right: 3rem;
+			margin-bottom: 0;
+	}
+	.nav-link{
+		font-size: 1.3rem;
+		font-size: normal;
+		transition: color .5s;
+	}
+	.nav-link:hover{
+		color:var(--yellow-solid);
+	}
+}

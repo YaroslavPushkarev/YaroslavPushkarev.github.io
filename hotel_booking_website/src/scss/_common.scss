@@ -110,25 +110,18 @@ section{
 	}
 
 	.title{
-		font-size: 8rem;
+		font-size: 6rem;
 	}
 	// .contact-content{
 	// 	justify-content: space-between;
 	// }
- // 	.traveler-wrap{
- // 		display: block;
- // 		// flex: 0 0 45%;
- // 	}
- // 	.traveler-wrap img{
-	// 	width: 100%;
- // 	}
- // 	.contact-form{
- // 		flex:0 0 50%;
- // 		align-self: flex-start;
- // 	}
- // 	.input-group-wrap{
- // 		display: flex;
- // 	}
+ 	.contact-form{
+ 		flex:0 0 50%;
+ 		align-self: flex-start;
+ 	}
+ 	.input-group-wrap{
+ 		display: flex;
+ 	}
 }
 
 @media screen and (min-width: 1000px){
@@ -136,60 +129,5 @@ section{
 		padding: 10rem 0;
 	}
 
-	.hamburger-menu{
-		display: none;
-	}
-	.nav-list{
-		position: initial;
-		width: initial;
-		height: initial;
-		background-color: transparent;
-		flex-direction: row;
-		justify-content: initial;
-		opacity: 1;
-		transform:scale(1);
-	}
-	
-	.nav-item:not(:last-child){
-		margin-right:3rem;
-		margin-bottom:0; 
-	}
-	.nav-link{
-		font-size: 1.3rem;
-		font-weight: normal;
-		transition:color .5s;
-	}
-	.nav-link:hover{
-		color:var(--yellow-solid);
-	}	
-	
-	.title{
-		font-size: 12rem;
-	}
-	.sub-title{
-		font-size: 4.6rem
-	}
-	
-	.form{
-		display: flex;
-		justify-content: space-between;
-	}
-	.book-form .input-group:first-child{
-		flex:0 0 20%;
-	}
-	.input,
-	.options{
-		min-width: 10rem;
-	}
-	.rooms-grid{
-		grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-		grid-gap:8rem;
-	}
-	.featured-rooms{
-		flex-direction: row;
-		align-items: flex-start;
-	}
-	.room-info-wrap{
-		margin-left: 1.5rem;
-	}
+
 }
